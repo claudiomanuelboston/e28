@@ -1,1 +1,44 @@
+<!doctype html>
+<html lang='en'>
 
+<head>
+    <title>Example</title>
+    <meta charset='utf-8'>
+</head>
+
+<body>
+    <label for='name'>What is your name?</label>
+    <input type='text' name='name' id='name'>
+    <button>Say hello</button>
+	<button type="button" id="myBtn" onclick="minMax()">Try it</button>
+
+
+    <script>
+		const button = document.querySelector('button');
+        button.addEventListener('click', sayHello);
+	
+        function sayHello() {
+            // Extracting data from the DOM
+            let name = document.getElementById('name').value;
+
+            let newParagraph = document.createElement('p');
+            newParagraph.textContent = 'Hello ' + name;
+
+            // Altering the DOM
+            document.body.appendChild(newParagraph);
+		}
+		function minMax() {
+		
+			let minMax = Math.floor(Math.random() * 10) + 1;
+			//alert(minMax);
+			let data = document.createElement('p');
+			data.textContent = minMax;
+			document.body.appendChild(data);
+		}
+        //const button = document.querySelector('button');
+        //button.addEventListener('click', sayHello);
+    </script>
+
+</body>
+
+</html>
