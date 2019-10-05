@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <head></head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+    <script src='script.js' defer></script>
+
+    <style>[v-cloak] { display: none;}</style>    
+</head>
+
+<body>
+    <h1>Intro</h1>
+    <div id='app' v-cloak>
+        <div>
+           <label>What is your name? <input type='text' v-model='playerName'></label>
+           <p v-if='playerName != null'>Player: {{playerName}} </p>
+        </div>
+
+        <div>
+           <label>What is your guess? <input type='text' v-model='guess'></label>
+           <button v-on:click='guesses.push(guess)'>Guest</button>
+           <ul>
+               <li v-for='thisguess in guesses'>{{thisguess}}</li>
+               <li v-for='thisguess in guesses'>{{guesses}}</li><!--test-->
+           </ul>
+        </div>
+         
+    </div>
+</body>
+</html>

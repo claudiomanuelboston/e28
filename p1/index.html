@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <title>Hi-Low Number Guess</title>
+
+
+  <!-- Required Stylesheets -->
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css" />
+
+
+  <!-- Load polyfills to support older browsers -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver"></script>
+
+  <!-- Required scripts -->
+  <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="guess-number">
+      <div v-bind:class="classBefore"></div>
+      <div v-bind:class="classAfter"></div>
+      <b-container class="bv-example-row container-small blue-bg border-gray">
+        <b-row class="card-header p-2 text-white">
+          <b-col>
+            <h2 class="mb-0 text-left">Hi-Low Number</h2>
+          </b-col>
+        </b-row>
+
+        <b-row class="light-blue p-3 mb-4">
+          <b-col class="col-md-12 text-right text-white">
+            <b>Attempts:</b>
+            {{attempts}} / {{totalAttempts}}
+          </b-col>
+        </b-row>
+
+        <b-row>
+          <b-col class="col-md-12 text-left mb-4">
+            <h5 v-if="!hideButton">Can you guess the secret number?</h5>
+            <h5 v-if="hideButton">Secret number was:</h5>
+          </b-col>
+
+          <b-col class="col-md-12 text-left">
+            <img class="float-left" v-if="!showAns" src="guess.png" />
+            <p class="r-number" v-if="showAns">{{randomNumber}}</p>
+          </b-col>
+          <b-col class="col-md-12 text-left mb-4" v-if="!hideButton">
+            <small>
+              <em>(This number will be reveal once all attempts are completed)</em>
+            </small>
+          </b-col>
+        </b-row>
+
+        <b-row class="mb-4" v-if="!hideButton">
+          <b-col class="col-md-12 text-left">
+            <label class="col-md-12 pl-0">
+              <h5>Enter your guess({{minNumber}} - {{maxNumber}})</h5>
+            </label>
+            <input class="form-control col-md-2 r-number" type="number" min="0" max="100" v-model="userInput"
+              :disabled="disabledInput" @keyup="isNumber($event)" />
+          </b-col>
+          <b-col class="text-danger text-left pt-1" v-if="userInput > 0">
+            <small>
+              <em>{{validationMessage}}</em>
+            </small>
+          </b-col>
+        </b-row>
+
+        <b-row>
+          <b-col class="col-md-12 col-lg-7">
+            <b-button v-if="!showAns" variant="primary" @click="checkNumber" class="mb-4 float-left mr-3"
+              :disabled="hideButton || disableButton">Guess Number</b-button>
+            <b-button class="float-left mb-4" variant="primary" v-if="hideButton" @click="playAgain">Play Again
+            </b-button>
+          </b-col>
+        </b-row>
+
+        <b-row class="mb-4 mt-3">
+          <b-col class="text-left counting-block col-md-12 col-lg-4">
+            <label class="counting-label">
+              Lower:
+              <span class="bg-primary rounded text-white">{{lower}}</span>
+            </label>
+          </b-col>
+          <b-col class="text-center counting-block col-md-12 col-lg-4">
+            <label class="counting-label">
+              Higher:
+              <span class="bg-primary rounded text-white">{{higher}}</span>
+            </label>
+          </b-col>
+          <b-col class="text-right counting-block col-md-12 col-lg-4">
+            <label class="counting-label">
+              Success:
+              <span class="bg-success rounded text-white">{{success}}</span>
+            </label>
+          </b-col>
+        </b-row>
+      </b-container>
+    </div>
+  </div>
+</body>
+
+</html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="vue.js"></script>
