@@ -1,14 +1,17 @@
-Project 2
+*Any instructions/notes in italics should be removed from the template before submitting.* 
 
-By: claudio bustamante
+# Project 2
++ By: *claudio bustamante*
++ Production URL: <http://p2.pabideas.com>
 
-Production URL: http://p2.pabideas.com
 
-Build strategy
-Put an x in the build strategy you used. Put an x in each if you tackled both.
- Integrated
- Comprehensive
+## Build strategy
+*Put an x in the build strategy you used. Put an x in each if you tackled both.*
++ [ ] Integrated
++ [X] Comprehensive
 
-Outside resources: N/A
+## Outside resources
+N/A
 
-Notes for instructor: N/A
+## Notes for instructor
+N/A
