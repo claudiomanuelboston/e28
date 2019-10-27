@@ -1,29 +1,14 @@
-# guess
+Project 2
 
-## Project setup
-```
-npm install
-```
+By: claudio bustamante
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Production URL: http://p2.pabideas.com
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Build strategy
+Put an x in the build strategy you used. Put an x in each if you tackled both.
+ Integrated
+ Comprehensive
 
-### Run your tests
-```
-npm run test
-```
+Outside resources: N/A
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-
+Notes for instructor: N/A
