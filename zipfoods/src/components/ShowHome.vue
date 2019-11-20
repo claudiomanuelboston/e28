@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>Claudio's ZipFoods.</p>
+        <p>ZipFoods is your one-stop-shop for convenient online grocery shopping in the greater Boston area.</p>
 
         <show-featured :category='featuredCategory'></show-featured>
     </div>

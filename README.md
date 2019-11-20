@@ -1,2 +1,3 @@
 # e28
-Course work DGMG e-28
+Course work DGMD E-28
+<https://hesweb.dev/e28>

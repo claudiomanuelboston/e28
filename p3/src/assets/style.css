@@ -1,0 +1,204 @@
+/* Calender */
+
+.p-dropdown .p-dropdown-panel {
+    z-index: 2 !important;
+}
+
+body .p-dropdown {
+    width: 150px !important;
+}
+
+.heartfillcolor {
+    font-size: 20px !important;
+    color: red !important;
+    cursor: pointer;
+}
+
+.fc-day-grid-event .fc-content {
+    color: white !important;
+    cursor: pointer !important;
+    padding: 5px;
+}
+
+.main {
+    background: #262829 !important;
+}
+
+.bg-info {
+    background: #0f8eb3 !important;
+}
+
+body .p-button {
+    background: #0f8eb3 !important;
+}
+
+body .fc .fc-toolbar .fc-button {
+    background: #0f8eb3 !important;
+}
+
+body .fc .fc-event {
+    background: #0f8eb3 !important;
+}
+
+.main .container-fluid {
+    padding-bottom: 15px !important;
+}
+
+.gallery {
+    float: left;
+    width: 100%;
+    overflow-x: auto;
+}
+
+body .p-datatable .p-datatable-thead>tr>th {
+    background: #d3d7d8 !important;
+}
+
+body .fc th {
+    background: #d3d7d8 !important;
+}
+
+.details-header {
+    height: 40px;
+    background: #e6edef;
+    text-align: left;
+    padding: 5px;
+}
+
+.required {
+    color: #cc0000;
+    font-size: 16px;
+}
+
+body .p-datatable .p-sortable-column.p-highlight {
+    color: #333333 !important;
+}
+
+body .p-datatable .p-sortable-column.p-highlight .p-sortable-column-icon {
+    color: #333333 !important;
+}
+
+.fontbold {
+    font-weight: bold;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.p-datatable-responsive .p-datatable-tbody>tr>td .p-column-title {
+    display: none;
+}
+
+.wrap-text {
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+
+/* CreateShow */
+
+.menu-body {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: block;
+    color: rgb(92, 92, 92);
+}
+
+.menu-section {
+    margin-bottom: 80px;
+}
+
+.menu-section-title {
+    font-family: georgia;
+    font-size: 28px;
+    display: block;
+    font-weight: normal;
+    margin: 20px 0;
+    text-align: Center;
+}
+
+.menu-item {
+    margin: 35px 0;
+    font-size: 18px;
+}
+
+.menu-item-name {
+    font-family: helvetica;
+    font-weight: bold;
+    border-bottom: 2px dotted rgb(213, 213, 213);
+}
+
+.menu-item-description {
+    font-style: italic;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+.menu-item-price {
+    float: right;
+    font-weight: bold;
+    font-family: arial;
+    margin-top: -22px;
+}
+
+.simple-menu-item-name {
+    font-family: helvetica;
+    font-weight: normal;
+}
+
+.note {
+    color: #cd1307 !important;
+}
+
+.section-note {
+    float: right;
+    font-weight: bold;
+    color: black !important;
+}
+
+.foodmenu-headnote {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 40em) {
+    .p-datatable-responsive .p-datatable-thead>tr>th,
+    .p-datatable-responsive .p-datatable-tfoot>tr>td {
+        display: none !important;
+    }
+    .p-datatable-responsive .p-datatable-tbody>tr>td {
+        text-align: left;
+        display: block;
+        border: 0 none;
+        width: 100% !important;
+        float: left;
+        clear: left;
+    }
+    .p-datatable-responsive .p-datatable-tbody>tr>td .p-column-title {
+        padding: .4em;
+        min-width: 30%;
+        display: inline-block;
+        margin: -.4em 1em -.4em -.4em;
+        font-weight: bold;
+    }
+    .p-datatable-wrapper .p-inputtext {
+        width: 90% !important;
+    }
+}
+
+.home-image {
+    max-width: 100%;
+    height: auto;
+}
+.nav-item{
+    cursor: pointer !important;
+}
