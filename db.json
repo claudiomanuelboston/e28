@@ -1,436 +1,148 @@
 {
-<<<<<<< HEAD
-  "products": [
+  "post": [
     {
-      "id": 1,
-      "name": "Driscoll’s Strawberries",
-      "description": "Driscoll’s Strawberries are consistently the best, sweetest, juiciest strawberries available. This size is the best selling, as it is both convenient for completing a cherished family recipes and for preparing a quick snack straight from the fridge.",
-      "price": 4.99,
-      "available": 0,
-      "weight": 1,
-      "perishable": true,
-      "categories": [
-        "produce",
-        "fruits"
-      ]
+      "sName": "CARMINHO",
+      "sDescription": "<p>Chick Corea: In the Mind of a Master is an exclusive documentary special, taking viewers behind the scenes with jazz legend Chick Corea during the making of his album Antidote with the Spanish Heart Band. </p>",
+      "dDate": "2019-11-26T19:30:00+05:30",
+      "nTicketPrice": "39.5",
+      "nGenreId": 1,
+      "nArtistId": 5,
+      "start": "2019-11-26T19:30:00+05:30",
+      "title": "CARMINHO",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Nestle Toll House Cookie Dough",
-      "description": "Get the classic taste that America loves in a ready to bake dough. Full of our famous morsels, these cookies deliver the semi-sweet chocolate flavor youve come to expect from Nestle Toll House.",
-      "price": 7.49,
-      "available": 325,
-      "weight": 2.25,
-      "perishable": true,
-      "categories": [
-        "snacks",
-        "baking"
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Gotham Greens Gourmet Lettuce Medley",
-      "description": "This lovely blend features Gotham Greens' Tropicana green leaf, Red Sail red leaf, Oak leaf, Lollo Rossa and tender Butterhead lettuces. Perfect for a colorful salad that's (almost) grown right in your own backyard!",
-      "price": 3.49,
-      "available": 10,
-      "weight": 0.3,
-      "perishable": true,
-      "categories": [
-        "produce",
-        "vegetables"
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Gold Medal All Purpose Flour",
-      "description": "All-purpose bleached flour is great for just about everything but doesn't add any color. It's perfect for baked goods like white sandwich bread and cake.",
-      "price": 2.09,
-      "available": 299,
-      "weight": 2,
-      "perishable": false,
-      "categories": [
-        "baking"
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Honey Nut Cheerios",
-      "description": "You already know that Honey Nut Cheerios Naturally Flavored has the irresistible taste of golden honey, making it a family favorite. Something that everyone can smile about! ",
-      "price": 3.99,
-      "available": 400,
-      "weight": 0.68,
-      "perishable": false,
-      "categories": [
-        "breakfast"
-      ]
-    },
-    {
-      "id": 6,
-      "name": "Eggo Nutri-Grain Whole Wheat Waffles",
-      "description": "Eggo® Nutri-Grain® waffles made with whole wheat have the same light and crispy texture as our original Eggo® Waffles, only with the added bonus of nutritious whole grain! ",
-      "price": 3.79,
-      "available": 236,
-      "weight": 0.25,
-      "perishable": true,
-      "categories": [
-        "breakfast",
-        "frozen"
-      ]
-    },
-    {
-      "id": 7,
-      "name": "Amy's Cheese Pizza",
-      "description": "The classic favorite, made with our savory pizza sauce and grated part-skim mozzarella cheese.",
-      "price": 8.49,
-      "available": 125,
-      "weight": 0.81,
-      "perishable": true,
-      "categories": [
-        "frozen",
-        "snacks"
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Birds Eye Steamfresh Fresh Frozen Vegetable Mix",
-      "description": "Delicious Birds Eye vegetables in blends that are just right for side dishes and your recipes.",
-      "price": 2.99,
-      "available": 99,
-      "weight": 0.68,
-      "perishable": true,
-      "categories": [
-        "frozen",
-        "vegetables"
-      ]
-    },
-    {
-      "id": 9,
-      "name": "Bare Coconut Chips",
-      "description": "Simply made with coconuts, cane sugar, and sea salt.",
-      "price": 4.99,
-      "available": 3,
-      "weight": 0.21,
-      "perishable": false,
-      "categories": [
-        "snacks"
-      ]
-    },
-    {
-      "id": 10,
-      "name": "Snapple Peach Tea",
-      "description": "To Peach their own. Smooth Snapple tea, perfect peach flavor. We made it just for you from the Best Stuff on Earth.",
-      "price": 12.99,
-      "available": 4,
-      "weight": 12,
-      "perishable": false,
-      "categories": [
-        "beverages"
-      ]
+      "sName": "GAELIC STORM",
+      "sDescription": "<p><strong>Jazz</strong> is a music genrethat originated in the African-American communities of New Orleans.</p>",
+      "dDate": "2019-11-29T21:00:00+05:30",
+      "nTicketPrice": "45",
+      "nGenreId": 1,
+      "nArtistId": 7,
+      "start": "2019-11-29T21:00:00+05:30",
+      "title": "GAELIC STORM",
+      "id": 2
     }
   ],
-  "comments": [
+  "genre": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "nGenreId": 1,
+      "sGenreName": "Jazz"
     },
     {
-      "id": 2,
-      "body": "some comment",
-      "postId": 1
+      "nGenreId": 2,
+      "sGenreName": "Rock"
+    },
+    {
+      "nGenreId": 3,
+      "sGenreName": "Pop"
+    },
+    {
+      "nGenreId": 4,
+      "sGenreName": "Electronic"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "artist": [
+    {
+      "nArtistId": 1,
+      "sArtistName": "Brian Eno",
+      "sBioGraphy": "Brian Peter George St John le Baptiste de la Salle Eno, RDI (/ˈiːnoʊ/; born Brian Peter George Eno, 15 May 1948) is an English musician, record producer, visual artist, and theorist best known for his pioneering work in ambient music and contributions to rock, pop, and electronica.[1] A self-described “non-musician”, Eno has helped introduce unique conceptual approaches and recording techniques to contemporary music.[1][2] He has been described as one of popular music's most influential and innovative figures",
+      "sImageUrlPath": [
+        "../../assets/artist/Eno/eno1.jpg",
+        "../../assets/artist/Eno/eno2.jpg",
+        "../../assets/artist/Eno/eno3.png",
+        "../../assets/artist/Eno/eno4.jpg"
+      ],
+      "sVideoUrlPath": [
+        "../../assets/artist/Eno/Signals (Remastered 2005).mp4"
+      ],
+      "nGenreId": 4
+    },
+    {
+      "nArtistId": 2,
+      "sArtistName": "Phillip Glass",
+      "sBioGraphy": "Philip Glass (born January 31, 1937)[1] is an American composer and pianist. He is widely regarded as one of the most influential composers of the late 20th century.[2][3][4] Glass's work has been described as minimal music, having similar qualities to other “minimalist” composers such as La Monte Young, Steve Reich, and Terry Riley.[5] Glass describes himself as a composer of “music with repetitive structures”,[6] which he has helped evolve stylistically.[7][8] Glass founded the Philip Glass Ensemble, with which he still performs on keyboards. He has written numerous operas and musical theatre works, twelve symphonies, eleven concertos, eight string quartets and various other chamber music, and film scores. Three of his film scores have been nominated for Academy Awards.",
+      "sImageUrlPath": [
+        "../../assets/artist/Glass/Glass1.png",
+        "../../assets/artist/Glass/Glass2.jpg",
+        "../../assets/artist/Glass/Glass3.jpg",
+        "../../assets/artist/Glass/Glass4.jpg"
+      ],
+      "sVideoUrlPath": [
+        "../../assets/artist/Glass/Koyaanisqatsi.mp4"
+      ],
+      "nGenreId": 4
+    },
+    {
+      "nArtistId": 3,
+      "sArtistName": "Klaus Schulze",
+      "sBioGraphy": "Born in Berlin on August 4, 1947, Schulze began his performing career during the '60s, playing guitar, bass, and drums in a variety of local bands.",
+      "sImageUrlPath": [
+        "../../assets/artist/Schulze/Schulze1.png",
+        "../../assets/artist/Schulze/Schulze2.png",
+        "../../assets/artist/Schulze/Schulze3.jpg",
+        "../../assets/artist/Schulze/Schulze4.jpg"
+      ],
+      "sVideoUrlPath": [
+        "../../assets/artist/Schulze/Timewind Vincent van Oss Klaus Schulze 2018.mp4"
+      ],
+      "nGenreId": 4
+    },
+    {
+      "nArtistId": 4,
+      "sArtistName": "Tangerine Dream",
+      "sBioGraphy": "Tangerine Dream are unquestionably one of the most influential electronic groups of all time. Their music has made an immeasurable impact on ambient, new age, techno, trance, and progressive rock, as well as modern film score composition. Founded as a psychedelic ",
+      "sImageUrlPath": [
+        "../../assets/artist/TDream/TDream1.png",
+        "../../assets/artist/TDream/TDream2.png",
+        "../../assets/artist/TDream/TDream3.jpg",
+        "../../assets/artist/TDream/TDream4.jpg"
+      ],
+      "sVideoUrlPath": [
+        "../../assets/artist/TDream/Tdream_video.mp4"
+      ],
+      "nGenreId": 4
+    },
+    {
+      "nArtistId": 5,
+      "sArtistName": "Chick Corea",
+      "sBioGraphy": "Armando Anthony “Chick” Corea (born June 12, 1941) is an American jazz pianist/electric keyboardist and composer.[3] His compositions “Spain”, “500 Miles High”, “La Fiesta” and “Windows”, are considered jazz standards.[4] As a member of Miles Davis's band in the late 1960s, he participated in the birth of jazz fusion. In the 1970s he formed the fusion band Return to Forever.[3] With Herbie Hancock, McCoy Tyner, Keith Jarrett and Bill Evans, he has been described as one of the major jazz piano voices to emerge in the post-John Coltrane era.",
+      "sImageUrlPath": [
+        "../../assets/artist/Corea/corea1.png",
+        "../../assets/artist/Corea/corea2.jpg",
+        "../../assets/artist/Corea/corea3.jpg",
+        "../../assets/artist/Corea/corea4.jpg"
+      ],
+      "sVideoUrlPath": [
+        "../../assets/artist/Corea/Amazing Performance by Chick Corea on LEGENDS OF JAZZ.mp4"
+      ],
+      "nGenreId": 1
+    }
+  ],
+  "faq": [
+    {
+      "nFAQId": 1,
+      "sQuestion": "Show Times",
+      "sAnswer": "<p>Venue doors and the Music Hall Box Office open at 5pm any night there is a performance (sometimes the Box Office will not open until 6pm during Flex Stage shows).  At this time you may pick up will call tickets for that evening’s event, purchase tickets, and obtain line numbers.  You may also order drinks at the bar from 5-6pm.</p><p>The Music Hall opens and seating begins at 6pm, at which time you can order food.</p><p>Shows start at 7:30pm (unless otherwise noted).</p>"
+    },
+    {
+      "nFAQId": 2,
+      "sQuestion": "Seating",
+      "sAnswer": "<p>The Music Hall is general admission, with all seating done on a first come, first served basis. To keep the process orderly, we use Line Numbers, which are picked up at the box office upon arrival.</p><p>The Music Hall is all seated with tables. The Flex Stage is all standing unless otherwise stated, and then it would have limited seating.</p><p>At 5pm, when the Box Office opens, we begin handing out Line Numbers to customers as they come to the Box Office. At 6pm when the Music Hall doors open, we begin seating by Line Number (i.e. the first person in at 5pm will be the first person in the Music Hall at 6pm). *Line Numbers are NOT used for Flex Stage shows.  Reserved seats are NOT available, except for artists’ guests and VIPs.</p>"
+    },
+    {
+      "nFAQId": 3,
+      "sQuestion": "Purchasing and Picking Up Tickets",
+      "sAnswer": "<p>Tickets are available through all Ticketmaster outlets and the Music Hall Box Office. The Music Hall sells tickets exclusively through Ticketmaster.</p><p>To purchase tickets visit www.Ticketmaster.com.</p><p>Tickets can not be purchased through Ticketmaster after 4pm on the day of the show, only at the Box Office.</p><p>The Music Hall does NOT sell tickets over the phone. The only way to buy tickets from The Music Hall directly is at our Box Office, from 5-9pm, any night we have a show.</p><p>All Music Hall tickets ordered via Ticketmaster on the phone or online will be waiting at Will Call on the night of show. Will Call tickets are NOT available for pickup until the night of the performance after 5pm, at Music Hall Box Office.</p>"
+    },
+    {
+      "nFAQId": 4,
+      "sQuestion": "Ticket Service Charges",
+      "sAnswer": "<p>Ticketmaster service charges are set up by Ticketmaster and we do not have any say in the matter. Tickets purchased at the Music Hall Box Office, will have a $5.50 service charge per ticket. This charge is for our Box Office Staff, Parking, and Security. “We want you here, happy & safe!”</p><p>*As of July 1, 2005 the City of Alexandria has passed an Admissions Entertainment Tax of 50 cents per ticket sold. This tax has been added to the Service Charge. Therefore all tickets purchased at The Music Hall Box Ofc will have a $5.50 service fee, which includes this new tax.</p>"
+    },
+    {
+      "nFAQId": 5,
+      "sQuestion": "Sold Out Shows",
+      "sAnswer": "<p>Yes. If a show is sold out, it is SOLD OUT. We do not have a waiting list, and we cannot re-sell tickets for people who don’t show up.</p><p>However, sometimes an Artist does not use all the tickets we hold for them. If that happens, the tickets are released at 5pm, day of show, at the Music Hall Box Office only. You must be here in person, and there’s no guarantee any tickets will be released. You cannot call to have tickets held.</p>"
+    }
+  ]
 }
-=======
-
-  "products": [
-
-    {
-
-      "id": 1,
-
-      "name": "Driscoll’s Strawberries",
-
-      "description": "Driscoll’s Strawberries are consistently the best, sweetest, juiciest strawberries available. This size is the best selling, as it is both convenient for completing a cherished family recipes and for preparing a quick snack straight from the fridge.",
-
-      "price": 4.99,
-
-      "available": 0,
-
-      "weight": 1,
-
-      "perishable": true,
-
-      "categories": [
-
-        "produce",
-
-        "fruits"
-
-      ]
-
-    },
-
-    {
-
-      "id": 2,
-
-      "name": "Nestle Toll House Cookie Dough",
-
-      "description": "Get the classic taste that America loves in a ready to bake dough. Full of our famous morsels, these cookies deliver the semi-sweet chocolate flavor youve come to expect from Nestle Toll House.",
-
-      "price": 7.49,
-
-      "available": 325,
-
-      "weight": 2.25,
-
-      "perishable": true,
-
-      "categories": [
-
-        "snacks",
-
-        "baking"
-
-      ]
-
-    },
-
-    {
-
-      "id": 3,
-
-      "name": "Gotham Greens Gourmet Lettuce Medley",
-
-      "description": "This lovely blend features Gotham Greens' Tropicana green leaf, Red Sail red leaf, Oak leaf, Lollo Rossa and tender Butterhead lettuces. Perfect for a colorful salad that's (almost) grown right in your own backyard!",
-
-      "price": 3.49,
-
-      "available": 10,
-
-      "weight": 0.3,
-
-      "perishable": true,
-
-      "categories": [
-
-        "produce",
-
-        "vegetables"
-
-      ]
-
-    },
-
-    {
-
-      "id": 4,
-
-      "name": "Gold Medal All Purpose Flour",
-
-      "description": "All-purpose bleached flour is great for just about everything but doesn't add any color. It's perfect for baked goods like white sandwich bread and cake.",
-
-      "price": 2.09,
-
-      "available": 299,
-
-      "weight": 2,
-
-      "perishable": false,
-
-      "categories": [
-
-        "baking"
-
-      ]
-
-    },
-
-    {
-
-      "id": 5,
-
-      "name": "Honey Nut Cheerios",
-
-      "description": "You already know that Honey Nut Cheerios Naturally Flavored has the irresistible taste of golden honey, making it a family favorite. Something that everyone can smile about! ",
-
-      "price": 3.99,
-
-      "available": 400,
-
-      "weight": 0.68,
-
-      "perishable": false,
-
-      "categories": [
-
-        "breakfast"
-
-      ]
-
-    },
-
-    {
-
-      "id": 6,
-
-      "name": "Eggo Nutri-Grain Whole Wheat Waffles",
-
-      "description": "Eggo® Nutri-Grain® waffles made with whole wheat have the same light and crispy texture as our original Eggo® Waffles, only with the added bonus of nutritious whole grain! ",
-
-      "price": 3.79,
-
-      "available": 236,
-
-      "weight": 0.25,
-
-      "perishable": true,
-
-      "categories": [
-
-        "breakfast",
-
-        "frozen"
-
-      ]
-
-    },
-
-    {
-
-      "id": 7,
-
-      "name": "Amy's Cheese Pizza",
-
-      "description": "The classic favorite, made with our savory pizza sauce and grated part-skim mozzarella cheese.",
-
-      "price": 8.49,
-
-      "available": 125,
-
-      "weight": 0.81,
-
-      "perishable": true,
-
-      "categories": [
-
-        "frozen",
-
-        "snacks"
-
-      ]
-
-    },
-
-    {
-
-      "id": 8,
-
-      "name": "Birds Eye Steamfresh Fresh Frozen Vegetable Mix",
-
-      "description": "Delicious Birds Eye vegetables in blends that are just right for side dishes and your recipes.",
-
-      "price": 2.99,
-
-      "available": 99,
-
-      "weight": 0.68,
-
-      "perishable": true,
-
-      "categories": [
-
-        "frozen",
-
-        "vegetables"
-
-      ]
-
-    },
-
-    {
-
-      "id": 9,
-
-      "name": "Bare Coconut Chips",
-
-      "description": "Simply made with coconuts, cane sugar, and sea salt.",
-
-      "price": 4.99,
-
-      "available": 3,
-
-      "weight": 0.21,
-
-      "perishable": false,
-
-      "categories": [
-
-        "snacks"
-
-      ]
-
-    },
-
-    {
-
-      "id": 10,
-
-      "name": "Snapple Peach Tea",
-
-      "description": "To Peach their own. Smooth Snapple tea, perfect peach flavor. We made it just for you from the Best Stuff on Earth.",
-
-      "price": 12.99,
-
-      "available": 4,
-
-      "weight": 12,
-
-      "perishable": false,
-
-      "categories": [
-
-        "beverages"
-
-      ]
-
-    }
-
-  ],
-
-  "comments": [
-
-    {
-
-      "id": 1,
-
-      "body": "some comment",
-
-      "postId": 1
-
-    },
-
-    {
-
-      "id": 2,
-
-      "body": "some comment",
-
-      "postId": 1
-
-    }
-
-  ],
-
-  "profile": {
-
-    "name": "typicode"
-
-  }
-
-}
->>>>>>> 22e181ae5ac3d19208df95fc1d3aa20f58bcc28f
