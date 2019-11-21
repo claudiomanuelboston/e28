@@ -12,7 +12,7 @@ In terms of the pages created I got ideas by visiting different music venues
 
 ## Notes for instructor
 
-In Order to run the application execute the following commands
+In order to run the application execute the following commands
 
 npm install
 npm start
