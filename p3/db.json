@@ -109,17 +109,6 @@
       "start": "2019-01-11T22:25:00+05:30",
       "title": "Guru Guru",
       "id": 10
-    },
-    {
-      "sName": "Claudo show",
-      "sDescription": "<p>this is a great show</p>",
-      "dDate": "2019-11-21T09:35:06-05:00",
-      "nTicketPrice": "40",
-      "nGenreId": 1,
-      "nArtistId": 5,
-      "start": "2019-11-21T09:35:06-05:00",
-      "title": "Claudo show",
-      "id": 11
     }
   ],
   "genre": [
