@@ -31,6 +31,7 @@ Thinking about P4 I begun introducting the following concepts
 	Pictures (4), Video (playable), Biography
 	
 3) Pages 
+
 		3.1) Music Hall (ficticious Music Hall) and Home (ficticious Music Hall)
 		
 		3.2) Create/ Post a Show (Having six fields) that are mandatory ( Show name, Description, Show Date, Ticket price, Genre and Artist.
