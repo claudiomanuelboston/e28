@@ -4,7 +4,8 @@ export const AuthConfig = Object.freeze({
 });
 
 export const UrlConfig = Object.freeze({
-    baseurl: "http://localhost:3000/"
+    // baseurl: "http://localhost:3000/"
+    baseurl: "https://my-json-server.typicode.com/claudiomanuelboston/e28/"
 });
 
 export const CommonMessageConfig = Object.freeze({
