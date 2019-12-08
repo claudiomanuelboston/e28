@@ -31,4 +31,3 @@ N/A
 + In general this was a decent application and met the minimum requirements. 
 + Used the my-json server for storage for mock server (https://my-json-server.typicode.com/ra1101/e28-p3-api/creatures)
 + I didn't see evidence for persisted/retrieved data from a local storage.
-
