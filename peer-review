@@ -18,8 +18,8 @@ NO
 
 
 ### Are there aspects of the code that you feel were not self-evident and would benefit from comments?
-1) With respect to the features, it was mentioned that the data would contain lat/long. I didn't see evidence of that on the application, but I see that data in the json file
-2) The code is straightfrward
++ With respect to the features, it was mentioned that the data would contain lat/long. I didn't see evidence of that on the application, but I see that data in the json file
++ The code is straightfrward
 
 ### Are there any parts of the code that you found interesting or taught you something new?
 No, the student used a lot of concepts described in class so I was not that difficult to understand the code
@@ -28,7 +28,7 @@ No, the student used a lot of concepts described in class so I was not that diff
 N/A
 
 ### Do you have any additional comments not covered in the above questions?
-In general this was a decent application and met the minimum requirements. 
-Used the my-json server for storage for mock server (https://my-json-server.typicode.com/ra1101/e28-p3-api/creatures)
-I didn't see evidence for persisted/retrieved data from a local storage.
++ In general this was a decent application and met the minimum requirements. 
++ Used the my-json server for storage for mock server (https://my-json-server.typicode.com/ra1101/e28-p3-api/creatures)
++ I didn't see evidence for persisted/retrieved data from a local storage.
 
