@@ -29,6 +29,6 @@ I am glad the images were store on AWS
 N/A
 
 ### Do you have any additional comments not covered in the above questions?
-+ In general this was a decent application and met the minimum requirements. The MVP were a minimal of 3 pages but 'Home' is a very simple one
++ In general this was a decent application and met the minimum requirements. The MVP was a minimal of 3 pages but 'Home' is a very simple one
 + Used the my-json server for storage for mock server (https://my-json-server.typicode.com/ra1101/e28-p3-api/creatures)
 + I didn't see evidence for persisted/retrieved data from a local storage.
