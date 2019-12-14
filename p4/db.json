@@ -109,6 +109,39 @@
       "start": "2019-01-11T22:25:00+05:30",
       "title": "Guru Guru",
       "id": 10
+    },
+    {
+      "sName": "Test Show",
+      "sDescription": "<p>Test show description.</p>",
+      "dDate": "2019-12-10T16:29:22-05:00",
+      "nTicketPrice": "10.8",
+      "nGenreId": 1,
+      "nArtistId": 5,
+      "start": "2019-12-10T16:29:22-05:00",
+      "title": "Test Show",
+      "id": 11
+    },
+    {
+      "sName": "Test Show",
+      "sDescription": "<p>Test show description.</p>",
+      "dDate": "2019-12-11T13:39:42-05:00",
+      "nTicketPrice": "10.8",
+      "nGenreId": 1,
+      "nArtistId": 5,
+      "start": "2019-12-11T13:39:42-05:00",
+      "title": "Test Show",
+      "id": 12
+    },
+    {
+      "sName": "Test Show",
+      "sDescription": "<p>Test show description.</p>",
+      "dDate": "2019-12-14T15:59:00-05:00",
+      "nTicketPrice": "10.8",
+      "nGenreId": 1,
+      "nArtistId": 5,
+      "start": "2019-12-14T15:59:00-05:00",
+      "title": "Test Show",
+      "id": 13
     }
   ],
   "genre": [
@@ -456,6 +489,116 @@
       "nFAQId": 14,
       "sQuestion": "Gift Cards",
       "sAnswer": "<p>Gift cards are available at the Music Hall for any amount.</p><p>Cards may only be purchased in person at the box office.</p><p>You cannot purchase them online or over the phone.The box office is open any evening there is a performance between the hours of 5pm and 9pm.</p>"
+    }
+  ],
+  "subscription": [
+    {
+      "sEmail": "example@gmail.com",
+      "id": 1
+    }
+  ],
+  "interview": [
+    {
+      "nInterviewId": 1,
+      "sTitle": "INTERVIEW: Felix White of The Maccabees",
+      "sDescription": "<p><b>Helen Hennessey : This interview is particularly exciting for me because your albums <i>Wall of Arms</i> and Given to the Wild were the first records I ever bought myself. Do you guys remember the first record you bought yourselves?</b></p><p>Felix White [The Maccabees]: The first tape I ever bought was Eternal ‘Power of a Woman’. I know. You win.</p><p><b>I was lucky enough to catch your set at the Seaside Heights Gentlemen of the Road show a few days ago and adored your set. Do you approach festival sets any differently from your headlining shows?</b></p><p>Thank you. I think in general one thing we’ve learned is that a gig is a gig. We try to play the same way whatever the situation. Little things change in terms of sound but it’s all about making the most of a moment that you won’t get again.  Sometimes it’s not quite what you want it to be, but you get the same amount of shows that for whatever reason feel really euphoric.</p><p><b>As a band from London, how does touring the U.S. compare to playing shows closer to home?</p></b><p>We definitely feel very English over here! Noticeably not from around these parts. So far this tour, crowds have been really good to us.</p><p><b>I also got the pleasure of seeing you last time you were in D.C. Were you able to get out into the city at all and see the sights? Is there anywhere you are looking to explore if you have the time?</b></p><p>We literally had no time at all last time. From what I can remember it was all a bit manic and we nearly didn’t get there in time. Record shops is usually my first stop if I have time and I imagine Washington has some really great ones.</p><p><b>Having three records - and soon, a fourth - under your belts, it’s fair to say you are now seasoned tour veterans. What would you say are the best, and the worst, parts of touring?</b></p><p>On and off we’ve been touring for about ten years. You can turn it into what you want it to be. There are moments when you feel concerned you haven’t given yourself a chance to do some more fundamentally functional things that some people back home have, but your music taking you around the world is a beautiful thing, and something that is still not lost on me.</p><p><b>I have a hard time explaining your music to potential converts - do you have a go-to phrase or description you use to describe your sound?</b></p><p>Each record we’ve made has always been so different that it can be quite difficult to. One thing I’m proud of now is that we have managed to just sound like The Maccabees and not like anyone else, and it took a while to get there.</p><p><b>I’ve always been curious about your lyric-writing process; do you look for inspiration from specific sources, or take things as they come?</b></p><p>Orlando largely writes the lyrics so that would usually be one for him. The switch on this record is the lyrics have become a bit more third person and observational of stories which is a product of spending a few years inside London really.</p><p><b><i>Marks to Prove It</i> will be your fourth album. How was the process of making this album different from making the last two?</b></p><p>It felt like it took more this time. We spent a year or more where nothing would come together. Where the last one was a lot of collated recordings and consciously based in soundscapes, we ended up taking it back into the studio and sounding like a band again. Once we realised that was how we would do it and introduced piano, percussion and some female backing vocals, it’s identity fell into place.<p><b>For <i>Given to the Wild</i>, I heard you guysopted to produce the majority of the record yourselves. Did that process give you any new insight into music, and how did that influence the production of Marks to Prove It?</b></p><p>Hugo took charge of those duties in the main. We were really keen on making something that sounded as a representation of what we sound like live as possible. Making it ourselves gave us more freedom to make those decisions. I think in terms of production, it’s probably the best sounding record we’ve made.</p><p><b>For Record Store Day this year, you released your debut album, Colour It In, for the first time as a vinyl record. How did that plan come to light and was it strange to revisit that album so many years later?</b></p><p>It was never released on vinyl. Which as much as anything is quite an interesting perspective on how much music format has changed, even in that time. So it felt like a good excuse to have it on vinyl. Listening back so much time later was strange yeah. I think it’s still packed full of lots of excited little ideas and has its own thing, one of which is sounding very young and like a formative stage of where we are at now.</p><p><b>I know Orlando is a talented illustrator as well as an excellent musician. Are there any other hidden talents in the band?</b></p><p>Sam is fluent in French. All other talents pretty well hidden. Although Hugo producing a whole record is no small feat. I put out an e.p. a year or two ago called Cosmo with guest vocal spots with people like Florence and Johnny from I am Kloot, whilst Orlando also made a side-project music/children’s story called ‘Young Colossus.’</p><p><b>Ok, final question for you guys: If you could have one superpower, what would it be?</b></p><p>Oh. Time travel. Every time. If that even is one.</p><p><i>-Helen Hennessey</i></p>",
+      "sImageUrlPath": "../../assets/interview/maccabees.jpg",
+      "sVideoUrlPath": "https://www.youtube.com/embed/NZcFMwga1A4"
+    },
+    {
+      "nInterviewId": 2,
+      "sTitle": "INTERVIEW: A Great Big World",
+      "sDescription": "<p><b>Lindsey Miller [9:30]: You both attended the NYU Music Business program. How has the knowledge you acquired there shaped your experience as artists?</b></p><p>Ian Axel [A Great Big World]: I would say that, honestly, I feel like we learned a lot of what we needed to learn in school in the first two years. Then, most of the rest of it was being in New York and interning and really getting out there and doing it and navigating the city and the business ourselves and networking. A lot of it was the professors who were connected and the speakers that would come into class and speak to us. A lot of it now is a lot of the kids that were in our classes back then are professionals in the industry that we’re running across and who are helping us along the way. It was a pretty amazing experience. And I met Chad there, so that’s that.</p><p><b>Did you anticipate the extreme success of “Say Something” or was it a total surprise?</b></p><p>Chad King [A Great Big World]: “Say Something” wasn’t on anyone’s radar. It was sort of a freak thing.</p><p>Ian: It was the last song on the list of songs that we thought would do what it did. It was always one of our favorite songs to perform live and it meant the most to us because it was so emotional and it was so therapeutic for our lives.</p><p>Chad: But in no way were we ever like, “That’s a single! We’re going to release that!”</p><p>Ian: Actually, yeah, So You Think You Can Dance reached out to us randomly to have that song on their show. It was out of nowhere. So, we threw it up on iTunes before our record came out and then it started getting some buzz, and then our label was like, “This is the single, we’re pushing this out as a single.” And we were actually like, “No, you can’t, this is not a single. This is gonna depress people. It’s only me singing, not Chad! A Great Big World writes happy songs!” But, you know, it had a life larger than us and larger than anyone thought it would.</p><p><b>What is the meaning behind the “Oasis” video?</b></p><p>Ian: I would say that we weren’t looking for a literal video. We didn’t want to define what someone’s oasis is.</p><p>Chad: We also didn’t want to literally spell out what the lyrics were in the song.</p><p>Ian: We didn’t want to be in a desert playing the piano with a sweeping camera or anything like that. So, we found Elliott Sellers, who is the director, and we fell in love with his work because it’s so visually stunning. He’s kind of out there and abstract and we loved that about him. So, we reached out to him and we talked about the universe and how we’re all connected and came up with this idea of having orbs, and each being in our own orbs and in our own worlds thinking that we are separate, but we’re really not. The oasis is right here in this moment. So, we left it at that. We’re really proud of it. It’s probably our favorite music video, or one of our favorites that we’ve ever shot.</p><p><b>What was it like when “This Is the New Year” premiered on <i>Glee</i>?</b></p><p>Chad: I would say that that was our first little debut into mainstream pop kind of success. I don’t think we had a team at the time, did we?</p><p>Ian: Not like we do now.</p><p>Chad: We had a manager, I think.</p><p>Ian: We were unsigned, and Glee had just put out fun.’s song – they had just broke fun. on the show - and they wanted to break more unsigned artists on the show. Ryan Murphy heard “This Is the New Year,” and the New Year’s episode was coming up. It really was the thing that got the ball rolling for us.</p><p>Chad: That’s what got us signed.</p><p>Ian: Signed to Epic. It was really a magical time for us. We threw a big party. You can probably find footage from the party on YouTube. Our family and friends came and we just cheered. Chad cried.</p><p><b>You branched out of your comfort zone by featuring rapper Futuristic on “Hold Each Other.” How did incorporating different sounds impact your own sound going forward?</b></p><p>Chad: Well, I think we saw Futuristic’s video when he covered “Say Something” about two years ago. We knew then, we were like, “We gotta work with this guy. This guy is brilliant.” We didn’t know how that would ever happen. Anyway, two years passed, and “Hold Each Other” was written, but we didn’t have a bridge to the song. I can’t remember who said it, but I think it was Ian, and he said that we should get Futuristic on it.</p><p>Ian: It was you.</p><p>Chad: Was it me? Well, then it was me. [Laughs.] We called him up and within a day he had that rap sent over to us.</p><p>Ian: You know, this song was originally written as a love song between a guy and a girl, and It became this love song that anyone can relate to, no matter what their sexuality. Futuristic added a whole different element of race into the song, and we’re just really proud to be a part of a song filled with so much love.</p><p><b>There have been rumors about your musical, Two Blocks Away. Can you give us any more information about that?</b></p><p>Chad: Well, we can tell you that it’s no longer called <i>Two Blocks Away</i>. The new title is called <i>Strokes of Genius</i>. And were really, really excited about it.</p><p>Ian: We’re getting close. We’re playing a show at Joe’s Pub at the Public Theater in New York on April 26th where we’re premiering some of the songs from the show for the first time as A Great Big World. We’re really excited about that, and hopefully that will lead to us work-shopping the show later in the year and getting a director on board. It takes a long time; we’ve been at this for three-and-a-half years, but there’s already some Broadway producers on board - since the beginning, actually - and an amazingly talented book-writer named Scott Cameron. That’s all we can tell you.</p><p><b>What artists have you been influenced by and how have they contributed to your music?</b></p><p>Chad: For me, I feel like The Beatles are my #1. And they probably will be for the rest of my life. Any time I go back to their music, it’s always surprising and mind-blowing. I love every decision they make in their songwriting, so I’m constantly inspired by them.</p><p>Ian: I would say, for me, Ben Folds, Randy Newman, and Danny Elfman. Growing up going to Ben Folds concerts and seeing him perform the way that he does and interact with the crowd the way he does - he’s so theatrical and he’s a genius. The way he bangs the crap out of that piano really inspired me to jump out of my comfort zone and be a little bit more fearless in life. So, thank you, Ben.</p><p><b>What was it like working with Christina Aguilera?</b></p><p>Ian: Working with her was a little bit intimidating for us at first because we had just found out that she wanted to work with us and were flew to LA and worked in a studio with her. We didn’t know what to expect. We were just scared and shy and didn’t know what it meant yet. She was so, so respectful of us and the song and she listened. She worked at 150%. She was just on, and it required us to be our best. She inspired us to be our best, always. Whenever we work with her, she’s just ready to go and she delivers. It’s really inspiring. We have gotten to know her a little bit, too, outside of working and she’s just a beautiful soul. She’s a lot of fun. We played paintball in her backyard one night after the AMAs.</p><p><b>How has your Grammy win impacted you?</b></p><p>Ian: For me, I still feel [<i>laughs</i>] like it happened, but in a lot of ways, it feels like it didn’t. I still feel like that was a dream. I still feel like we’re just trying to figure out how it is we do what we do, and are thankful every day when we write a song that we still know how to write a song. Thankful whenever we play a show that people are there. I don’t know, we still feel like the underdog in a lot of ways. Having the Grammy in our apartments is pretty intense, and it still is. Whenever I see that thing, it’s just a reminder of like, “You can’t screw this up. You can’t screw up. You need to play better. You need to write better.”</p><p>Chad: I also think that that [the Grammy] is one of the biggest compliments that we’ve received, if not the biggest. I don’t know, it fills your soul to know that you’re looked upon, your song is respected in that way.</p><p>Ian: Yeah, you’re recognized for it in that something that you created impacted so many people. It really is so fulfilling; it just fills my world.</p><p><b>How would you categorize your style of music?</b></p><p>Ian: I would say…</p><p>Chad: Fun, hopeful.</p><p>Ian: Theatrical, positive, optimistic, emotional.</p><p>Chad: Colorful.</p><p>Ian: Harmony-driven.</p><p>Chad: Chocolate.</p><p>Ian: Cookie dough.</p><p><i>-Lindsey Miller </i></p>",
+      "sImageUrlPath": "../../assets/interview/bigworld.jpg",
+      "sVideoUrlPath": "https://www.youtube.com/embed/27R_goWiAAU"
+    },
+    {
+      "nInterviewId": 3,
+      "sTitle": "INTERVIEW: The Dunwells",
+      "sDescription": "<p><b>This is such a family affair, with a set of both brothers and cousins. How does that affect the dynamic of the group?</b></p><p>JD: People always ask this, but we all tend to get along. We’re all mates and have a lot of fun together on tour.</p><p><b><i>Blind Sighted Faith</i> definitely combines a lot of different genres (blues, rock, folk, etc.), which can really be appealing to anyone. How would you describe the sound?</b></p><p>JD:  It’s a collection of songs that we’ve all kind of played individually. But some developed together over that time. We all have different influences. Overall, I’m just so happy with the album. It has such an eclectic feel to it, which I think is always great.</p><p><b>Speaking of <i>Blind Sighted Faith</i>, what is your favorite song from the album to perform at shows?</b></p><p>JD:  It differs from time to time. It depends on the tour. We’re adding new songs, so that changes it up a bit. We’ve been opening with ‘Blind Sighted Faith’ lately and that one is really close to my heart.</p><p><b>People compare you guys to Mumford & Sons and other rootsy Americana groups. Who are your main influences?</b></p><p>JD:  For me personally, Radiohead and Damien Rice are two that stand out…. any music that’s good music, honestly. But with the comparisons, we do love Mumford & Sons though, they’re a great group and we have a lot of respect for them.</p><p><b>What artist/group has been on heavy rotation on your iPod while on tour?</b></p><p>JD:  Foy Vance comes up a lot, he’s incredible. I listen to many different groups though.</p><p><b>What place in America has been the most fun to visit? Are you missing England?</b></p><p>JD:  I’m not missing England just yet. We are very much looking forward to the shows in Colorado. We really just love America and are happy to be here.</p><p><i>-Emily Hirsch</i></p>",
+      "sImageUrlPath": "../../assets/interview/dunwells.jpg",
+      "sVideoUrlPath": ""
+    },
+    {
+      "nInterviewId": 4,
+      "sTitle": "INTERVIEW: The Comet Is Coming",
+      "sDescription": "<p><b>Club: What drew you to Impulse! Records? Why is it a good fit for the next phase of your musical manifesto?</b></p><p>King Shabaka: The first stage of squatting the master’s house involves walking through the front door.</p><p><b>In the past, you’ve described your songs as being snapshots that create a particular phrase or mantra when put together in the format of an album. Do you still consider this to be true? If so, what is the message you are sending with Trust In <i>The Lifeforce Of The Deep Mystery</i>?</b></p><p>Danalogue: Sometimes I wonder where are we pulling this music from? The myriad spectrums of our imagination in the moment, the thoughts and emotions that are arising for us individually, the places we can go in our subconscious, alternate dimensions and then the chemical reaction that occurs between the three of us when playing simultaneously. And there’s more. In that way a Comet Is Coming album is a series of vignettes of parallel realities or dream states woven together.</p><p>While you could consider the album to deal with notions of past and future, death and rebirth, destruction and creation, cultural reflection and an encouragement for the will and imagination, the possibilities are endless and what this record means will ultimately be in the mind of the listener. </p><p>In the end there are thought patterns and clouds of inspiration that occur in our lives generally, and that will implicitly be involved in the art we make, which can sometimes bleed into the explicit.</p><p>The titles in particular [on] the album title contain further encoded symbology.</p><p><b>The upcoming album dives into the coexisting planes of being and consciousness. Referring to the term “Lifeforce” - is this a concept of some higher being that encompasses what’s referenced in your subject matter, or is this something that you see as all that is and isn’t?</b></p><p>King Shabaka: Questioning has to start with an exploration into the nature of the ‘deep mystery’. I see this mystery as being the interconnectivity of all things, the point at which the plane of consciousness which we inhabit singularly is shared by many in service of elevation/elation. The mystery encapsulates all perspectives and narratives depicting the past, binding them into an ever revolving door to the present which stays in perpetual motion. The mystery has a lifeforce - it grows, it adapts to our ongoing human experience in a continual nuancing of its purpose and form with an equal force to whatever dynamism our endeavours to understand it and depict it unleash. This lifeforce can be accessed through the creation of energy. The energy of meditation, the energy of breathing, the energy of the sexual encounter, the energy of music. This lifeforce is a bridge to the deep mystery.</p><p><b>In past interviews, you’ve mentioned following and finding inspiration from Alan Watts’ teachings, which commonly focus on the self and the implications of having a human experience. Since you label your music as “pre-apocalyptic,” what do you think the reality of the self versus a collective consciousness would be like in the end of the world?</b></p><p>Danalogue: This is something I frequently talk to taxi drivers about after they find out the name of the group.</p><p>If we use Watts’ classic analogy of life being like a wave, that needs to rise to a crest and eventually crash down to make the whole wave, or his question ‘is the candle worth the stick?’ (Do we prefer to have this wonderful fire flickering, lighting and dancing even though it eventually burns out and disappears) it can help to process the precious, fragile and ephemeral nature of our lives on an individual level, and approach Nowness, that everything is in the Now.</p><p>In terms of collective consciousness, we can consider how rare a thing it is that organic matter evolves and organises itself to the point that self-awareness on the level of humans has flowered out of the universe. Part of that is The Lifeforce’s propensity for survival and reproduction, which macrocosmically, as a collective consciousness, can express itself through a sort of horror regarding apocalypse, or the sun eventually cooling and humans dying out. Perhaps humans can rise out of the culturally constructed divisions and environmental destruction that currently hinders our progress towards being able to leave the planet and find new worlds. Perhaps we can transcend this reality and find peace in not leaving the planet and destroying ourselves. I tend to find the former more exciting.</p><p><b>The band has knowledge on the physical (quite literally, quantum physics) and the metaphysical. How does combining the two help you translate this into a synesthetic experience, between music and the visuals in your videos?</b></p><p>Betamax: The duality of physical and metaphysical is really just a game to trick you into seeing the world through different types [of] abstraction. The essence of our truth is an expression in the language of pattern. The correlation of ideas, shapes and events. Reverberation and Collisions, understanding the universal energy through direct experience. Awareness itself actually takes the form of the world. We experience life inside a dream, and in this sense art can be seen as a dream sculpture, made harnessing the primal energy of the universe - creativity. The process of interacting directly with the state of being by manifesting the cosmic intuition. In this way we find meaning and truth and we can say we know, we love, we transcend, we surrender into unity.</p><p><b><i>Channel The Spirits</i> has “Lightyears” and <i>Trust In The Lifeforce Of The Deep Mystery</i> has “Blood of the Past,” both of which are extraordinary centerpieces to their respective albums featuring rare vocals by guest artists. How did these collaborations come about?</b></p><p>Danalogue: I love use of words as a sudden and fleeting paradigm shift on our records, leaving the bulk of the expression to be encoded into instrumental exploration, but allowing a wordsmith of similar intensity to us to come in and express themselves using our compositions as fuel for their inspiration.</p><p>Shabaka suggested inviting Joshua Idehen to the studio, I think they knew each other already, and immediately his fire, energy and excitement to be in the studio made him mesh with the band. He came in, spoke over about five tracks and we picked the ones to keep in production.</p><p>I was dreaming of working with Kate Tempest for a long time, and we had a working title of ‘Tempest’ for Blood of the Past, every time we worked on the middle section I’d say ‘this is where Kate Tempest is going to speak’ because I thought she would slay it so hard…so I was monumentally chuffed when she agreed to do it and created such an honest, poignant dissection/destruction mic drop, stars aligned for sure.</p>",
+      "sImageUrlPath": "../../assets/interview/comet.jpg",
+      "sVideoUrlPath": "https://www.youtube.com/embed/9yEM-IgR69Y"
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "sProductName": "MERRIWEATHER LETTER BOARD TEE",
+      "sPrice": "10.00",
+      "sImageUrlPath": "../../assets/products/product1.jpg"
+    },
+    {
+      "id": 2,
+      "sProductName": "THE ANTHEM NEON LOGO TEE - ORANGE",
+      "sPrice": "15.00",
+      "sImageUrlPath": "../../assets/products/product2.jpg"
+    },
+    {
+      "id": 3,
+      "sProductName": "MERRIWEATHER STAGE COLLECTIBLE",
+      "sPrice": "149.00",
+      "sImageUrlPath": "../../assets/products/product3.jpg"
+    },
+    {
+      "id": 4,
+      "sProductName": "THE ANTHEM MUG",
+      "sPrice": "10.00",
+      "sImageUrlPath": "../../assets/products/product4.jpg"
+    },
+    {
+      "id": 5,
+      "sProductName": "EARPEACE THE ANTHEM EAR PLUGS",
+      "sPrice": "15.00",
+      "sImageUrlPath": "../../assets/products/product5.jpeg"
+    },
+    {
+      "id": 6,
+      "sProductName": "THE ANTHEM TRUCKER HAT",
+      "sPrice": "20.00",
+      "sImageUrlPath": "../../assets/products/product6.jpg"
+    },
+    {
+      "id": 7,
+      "sProductName": "THE ANTHEM KOOZIE",
+      "sPrice": "5.00",
+      "sImageUrlPath": "../../assets/products/product7.jpg"
+    },
+    {
+      "id": 8,
+      "sProductName": "THE ANTHEM SOCKS",
+      "sPrice": "10.00",
+      "sImageUrlPath": "../../assets/products/product8.jpg"
+    },
+    {
+      "id": 9,
+      "sProductName": "THE ANTHEM INAUGURAL LADIES' TEE",
+      "sPrice": "7.50",
+      "sImageUrlPath": "../../assets/products/product9.jpg"
+    },
+    {
+      "id": 10,
+      "sProductName": "TOWER KEY CHAIN",
+      "sPrice": "3.75",
+      "sImageUrlPath": "../../assets/products/product10.jpg"
+    },
+    {
+      "id": 11,
+      "sProductName": "GIFT CARD",
+      "sPrice": "25.00",
+      "sImageUrlPath": "../../assets/products/product11.jpg"
+    },
+    {
+      "id": 12,
+      "sProductName": "I.M.P. PIN SET",
+      "sPrice": "5.00",
+      "sImageUrlPath": "../../assets/products/product12.jpg"
     }
   ]
 }

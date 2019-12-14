@@ -23,6 +23,10 @@ const MusicianFavoriteList = () =>
     import ('@/views/MusicianFavoriteList/MusicianFavoriteList')
 const Home = () =>
     import ('@/views/Home/Home')
+const Interview = () =>
+    import('@/views/Interview/Interview')
+const Cart = () =>
+    import('@/views/Cart/Cart')
 
 function configRoutes() {
 
@@ -74,6 +78,16 @@ function configRoutes() {
                 path: 'home',
                 name: 'HomePage',
                 component: Home
+            },
+            {
+                path: 'interview',
+                name: 'Interview',
+                component: Interview
+            },
+            {
+                path: 'cart',
+                name: 'Cart',
+                component: Cart
             }
         ]
     }, ]

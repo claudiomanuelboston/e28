@@ -98,7 +98,6 @@ iframe {
     cursor: pointer;
 }
 
-
 /* CreateShow */
 
 .menu-body {
@@ -167,12 +166,10 @@ iframe {
     text-align: center;
 }
 
-
 /* Responsive */
 
 @media screen and (max-width: 40em) {
-    .p-datatable-responsive .p-datatable-thead>tr>th,
-    .p-datatable-responsive .p-datatable-tfoot>tr>td {
+    .p-datatable-responsive .p-datatable-thead>tr>th, .p-datatable-responsive .p-datatable-tfoot>tr>td {
         display: none !important;
     }
     .p-datatable-responsive .p-datatable-tbody>tr>td {
@@ -199,6 +196,109 @@ iframe {
     max-width: 100%;
     height: auto;
 }
-.nav-item{
+
+.nav-item {
     cursor: pointer !important;
+}
+
+.newsletter {
+    padding: 80px 0;
+    background: #0f8eb3;
+    width: 100%;
+}
+
+.newsletter .content {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.newsletter .content h2 {
+    color: #243c4f;
+    margin-bottom: 40px;
+}
+
+.newsletter .content .form-control {
+    height: 50px;
+    border-color: #ffffff;
+    border-radius: 0;
+}
+
+.newsletter .content.form-control:focus {
+    box-shadow: none;
+    border: 2px solid #243c4f;
+}
+
+.newsletter .content .btn {
+    min-height: 50px;
+    border-radius: 0;
+    background: #243c4f;
+    color: #fff;
+    font-weight: 600;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart-counter {
+    padding: 6px;
+    height: 5px;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(224, 227, 237);
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 15px;
+    transform: translate(0%, -50%);
+    font-size: 12px;
+    font-weight: bold;
+    font-family: sans-serif;
+    background: #c67605;
+}
+
+@media only screen and (max-width: 1000px) {
+    .cart-counter {
+        top: 30% !important;
+        left: 6px !important;
+    }
+}
+
+.cart>tbody>tr>td, .cart>tfoot>tr>td {
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1000px) {
+    table.cart thead {
+        display: none;
+    }
+    .actions .btn {
+        width: 22%;
+        margin: 1.5em 0;
+    }
+    table.cart tbody td {
+        display: block;
+        padding: 0.6rem;
+    }
+    table.cart tbody tr td:first-child {
+        background: #333;
+        color: #fff;
+    }
+    table.cart tbody td:before {
+        content: attr(data-th);
+        font-weight: bold;
+        display: inline-block;
+        width: 8rem;
+    }
+    table.cart tfoot td {
+        display: block;
+    }
+    table.cart tfoot td .btn {
+        display: block;
+    }
 }

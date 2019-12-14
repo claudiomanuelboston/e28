@@ -57,10 +57,11 @@
                   </span>
               </div>-->
               <div class="header-pricing-container">
-                <span class="header-pricing">
-                  <i class="fa fa-usd" />
-                  &nbsp; &nbsp;{{postDetailsById.nTicketPrice}}
+                <span class="header-pricing btn btn-light">
+                  <i class="fa fa-usd mr-1" />
+                  <span class="font-weight-bold">{{postDetailsById.nTicketPrice}}</span>
                 </span>
+                <button class="btn btn-success m-2" @click="addToCart(postDetailsById)">Buy Now</button>
               </div>
               <!-- <div class="header-pricing-container">
                   <span class="header-pricing">
@@ -278,6 +279,9 @@ export default {
     },
     formatDate(date) {
       return moment(date).format("DD MMMM YYYY | hh:mmA");
+    },
+    addToCart(item) {
+      this.$store.commit("addToCart", item);
     }
   }
 };

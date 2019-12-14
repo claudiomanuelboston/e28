@@ -97,7 +97,7 @@ export default {
 
             setTimeout(() => {
               this.sError = "";
-            }, 2000);
+            }, 3000);
           }
 
           e.target.reset();

@@ -42,4 +42,16 @@ export default class ShowService {
     getArtist() {
         return axios.get(baseurl + "artist");
     }
+
+    saveSubscription(objRequest) {
+        return axios.post(baseurl + "subscription", objRequest);
+    }
+
+    getInterviewsData() {
+        return axios.get(baseurl + "interview");
+    }
+    
+    getProducts(){
+        return axios.get(baseurl + "product")
+    }
 }

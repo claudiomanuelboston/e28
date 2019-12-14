@@ -16,10 +16,14 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e"
+    "test:e2e": "testcafe chrome e2etest/app.test.js",
+    "test": "jest",
+    "test-watch": "npm run test -- --watch"
   },
   "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.7.4",
     "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.7.6",
     "@ckeditor/ckeditor5-build-classic": "^15.0.0",
     "@ckeditor/ckeditor5-vue": "^1.0.0",
     "@coreui/coreui": "^2.1.12",
@@ -30,6 +34,8 @@
     "@fullcalendar/daygrid": "^4.3.0",
     "@fullcalendar/interaction": "^4.3.0",
     "@fullcalendar/timegrid": "^4.3.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "2.0.0-rc.24",
     "chart.js": "^2.8.0",
@@ -49,7 +55,8 @@
     "vue-chartjs": "^3.4.2",
     "vue-loading-overlay": "^3.2.0",
     "vue-perfect-scrollbar": "^0.1.0",
-    "vue-router": "^3.0.6"
+    "vue-router": "^3.0.6",
+    "vuex": "^3.1.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
@@ -57,13 +64,17 @@
     "@vue/cli-plugin-eslint": "^3.8.0",
     "@vue/cli-plugin-unit-jest": "^3.8.0",
     "@vue/cli-service": "^3.8.4",
-    "@vue/test-utils": "1.0.0-beta.29",
+    "@vue/test-utils": "^1.0.0-beta.29",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "growl": "^1.10.5",
     "https-proxy-agent": "^2.2.1",
+    "jest": "^24.9.0",
+    "jest-serializer-vue": "^2.0.2",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
+    "testcafe": "^1.7.0",
+    "vue-jest": "^3.0.5",
     "vue-template-compiler": "^2.6.10"
   },
   "browserslist": [

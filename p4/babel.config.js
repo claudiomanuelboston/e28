@@ -1,14 +1,21 @@
 module.exports = {
-  presets: [
-    ['@vue/app', {
-      polyfills: [
-        'es6.array.find',
-        'es6.array.from',
-        'es6.symbol'
+  plugins: ["@babel/plugin-syntax-dynamic-import"],
+  env: {
+    Dev: {
+      presets: [
+        ['@vue/app', {
+          polyfills: [
+            'es6.array.find',
+            'es6.array.from',
+            'es6.symbol'
+          ]
+        }]
       ]
-    }],
-    ["@babel/preset-env", {
-      "useBuiltIns": "entry"
-    }]
-  ]
+    },
+    test: {
+      presets: [
+        ["env", { "targets": { "node": "current" } }]
+      ]
+    }
+  }
 }
