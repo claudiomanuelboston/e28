@@ -21,7 +21,7 @@
 
 
 ### Are there any parts of the code that you found interesting or taught you something new?
-- In the code the following entry was never used : <router-link exact :to='{name: "myStuff"}'>My Stuff</router-link>&nbsp;|&nbsp;
+- The following router-link was never used : "myStuff"}'>My Stuff<
 
 ### Are there any best practices discussed in course material that you feel were not addressed in the code?
 - NO 
