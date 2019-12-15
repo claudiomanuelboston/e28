@@ -16,7 +16,7 @@
 - The code is very straightforward
 
 ### Are there aspects of the code that you feel were not self-evident and would benefit from comments?
-- I am not sure the reason of having
+- I am not sure the reason of having 'My Recipes' menu entry if it was never used
 - Liked the facts that images were of the same size and the contents were well written
 
 
