@@ -1,9 +1,9 @@
 import { mount, createLocalVue } from '@vue/test-utils';
-import VeeValidate from 'vee-validate'
+import Vuelidate from 'vuelidate'
 import Login from '../admin/Login/Login'; // name of your Vue component
 
 const localVue = createLocalVue();
-localVue.use(VeeValidate);
+localVue.use(Vuelidate);
 
 describe('Login', () => {
     let wrapper = mount(Login, {
@@ -17,10 +17,13 @@ describe('Login', () => {
                 sPassword: undefined
             }
         });
-        await wrapper.vm.$validator.validate();
-        expect(wrapper.vm.$validator.errors.any()).toBe(true);
+
+        wrapper.find("form").trigger("submit.prevent")
+        await wrapper.vm.$nextTick();
+
+        expect(wrapper.vm.$v.$invalid).toBe(true);
     })
-    
+
     it('check valid email address with invalid email', async () => {
         wrapper.setData({
             loginModel: {
@@ -28,9 +31,11 @@ describe('Login', () => {
                 sPassword: undefined
             }
         });
-        await wrapper.vm.$validator.validate();
 
-        expect(wrapper.vm.$validator.errors.has('Email')).toBe(true);
+        wrapper.find("form").trigger("submit.prevent")
+        await wrapper.vm.$nextTick();
+
+        expect(wrapper.vm.$v.loginModel.sEmail.$error).toBe(true);
     });
 
     it('check password is required with invalid password', async () => {
@@ -40,8 +45,10 @@ describe('Login', () => {
                 sPassword: undefined
             }
         });
-        await wrapper.vm.$validator.validate();
 
-        expect(wrapper.vm.$validator.errors.has('Password')).toBe(true);
+        wrapper.find("form").trigger("submit.prevent")
+        await wrapper.vm.$nextTick();
+
+        expect(wrapper.vm.$v.loginModel.sPassword.$error).toBe(true);
     });
 });

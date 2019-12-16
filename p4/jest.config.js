@@ -13,8 +13,5 @@ module.exports = {
   snapshotSerializers: [
     "<rootDir>/node_modules/jest-serializer-vue"
   ],
-  transformIgnorePatterns: [
-    "/node_modules/(?!vee-validate/dist/rules)"
-  ],
   testPathIgnorePatterns: ["<rootDir>/e2etest/"]
 }

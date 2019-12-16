@@ -14,38 +14,40 @@
                     <input
                       type="text"
                       v-model="loginModel.sEmail"
-                      v-validate="'required|email'"
                       placeholder="Email"
                       id="sEmail"
                       name="Email"
                       class="form-control"
-                      :class="{ 'is-invalid': errors.has('Email') }"
+                      :class="{ 'is-invalid': submitted && $v.loginModel.sEmail.$error }"
                       :maxlength="50"
                       autocomplete="off"
                     />
-                    <div v-if="errors.has('Email')" class="text-danger">{{ errors.first('Email') }}</div>
+                    <div v-if="submitted && $v.loginModel.sEmail.$error" class="text-danger">
+                      <!-- {{ errors.first('Email') }} -->
+                      <span v-if="!$v.loginModel.sEmail.required">Email is required</span>
+                      <span v-if="!$v.loginModel.sEmail.email">Email is invalid</span>
+                    </div>
                   </div>
                   <div class="form-group">
                     <input
                       type="password"
                       v-model="loginModel.sPassword"
-                      v-validate="'required'"
                       class="form-control"
                       placeholder="Password"
                       id="sPassword"
                       name="Password"
-                      :class="{ 'is-invalid': errors.has('Password') }"
+                      :class="{ 'is-invalid': submitted && $v.loginModel.sPassword.$error }"
                       :maxlength="50"
                       autocomplete="off"
                     />
                     <div
-                      v-if="errors.has('Password')"
+                      v-if="submitted && !$v.loginModel.sPassword.required"
                       class="text-danger"
-                    >{{ errors.first('Password') }}</div>
+                    >Password is required</div>
                   </div>
                   <div class="row">
                     <div class="col-6">
-                      <button class="btn btn-primary" v-bind:disabled="errors.any()">Login</button>
+                      <button class="btn btn-primary" id="loginBtn">Login</button>
                     </div>
                   </div>
                 </form>
@@ -64,6 +66,7 @@ import {
   AuthConfig,
   CommonMessageConfig
 } from "../../assets/configuration/config";
+import { required, email, minLength, sameAs } from "vuelidate/lib/validators";
 
 export default {
   name: "Login",
@@ -78,31 +81,39 @@ export default {
         sPassword: undefined
       },
       sError: undefined,
-      config: AuthConfig
+      config: AuthConfig,
+      submitted: false
     };
+  },
+  validations: {
+    loginModel: {
+      sEmail: { required, email },
+      sPassword: { required }
+    }
   },
   methods: {
     checkLogin(e) {
-      this.$validator.validate().then(valid => {
-        if (valid) {
-          if (
-            this.loginModel.sEmail == this.config.sEmail &&
-            this.loginModel.sPassword == this.config.sPassword
-          ) {
-            localStorage.setItem("Email", this.loginModel.sEmail);
-            localStorage.setItem("Password", this.loginModel.sPassword);
-            router.push({ name: "createshow" });
-          } else {
-            this.sError = CommonMessageConfig.InvalidCredential;
+      this.submitted = true;
+      this.$v.$touch();
+      if (this.$v.$invalid) {
+        return;
+      }
+      if (
+        this.loginModel.sEmail == this.config.sEmail &&
+        this.loginModel.sPassword == this.config.sPassword
+      ) {
+        localStorage.setItem("Email", this.loginModel.sEmail);
+        localStorage.setItem("Password", this.loginModel.sPassword);
+        router.push({ name: "createshow" });
+      } else {
+        this.sError = CommonMessageConfig.InvalidCredential;
 
-            setTimeout(() => {
-              this.sError = "";
-            }, 3000);
-          }
+        setTimeout(() => {
+          this.sError = "";
+        }, 3000);
+      }
 
-          e.target.reset();
-        }
-      });
+      // e.target.reset();
     }
   }
 };

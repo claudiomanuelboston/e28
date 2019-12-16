@@ -8,12 +8,12 @@ import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import App from './App'
 import router from './router'
-import VeeValidate from 'vee-validate'
 import Loading from "vue-loading-overlay";
 import CKEditor from '@ckeditor/ckeditor5-vue';
 import Router from 'vue-router';
 import Vuex from 'vuex';
 import { store } from './store/store';
+import Vuelidate from 'vuelidate';
 //primeng
 import FullCalendar from 'primevue/fullcalendar';
 import Dropdown from 'primevue/dropdown';
@@ -37,13 +37,12 @@ Vue.component('Toast', Toast);
 
 
 Vue.use(BootstrapVue)
-Vue.use(VeeValidate);
 Vue.use(ToastService);
 Vue.use(CKEditor);
 Vue.use(Router);
 Vue.use(Vuex);
-
-localStorage.setItem("favoriteList", null)
+Vue.use(Vuelidate);
+localStorage.setItem("favoriteList", null);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

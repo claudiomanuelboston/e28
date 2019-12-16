@@ -12,12 +12,11 @@ const sPassword = AuthConfig.sPassword;
 
 //For check navigation button is visible in normal or mobile view
 const navigationBtn = Selector('button.navbar-toggler');
-
 //For test create, view show, Add to cart and Favorite
 const showName = 'Test Show';
 
 test('Test - First page URL without Login', async t => {
-    await t.expect(getLocation()).contains(`${applicationUrl}/#/login`).wait(1500);
+    await t.expect(getLocation()).contains(`${applicationUrl}/#/`).wait(1500);
 });
 
 test('Test - Login page Authorization', async t => {

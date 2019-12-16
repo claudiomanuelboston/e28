@@ -21,34 +21,15 @@
               <input
                 type="text"
                 v-model="showModel.sName"
-                v-validate="'required'"
                 placeholder="Show Name"
                 id="sName"
                 name="Name"
                 class="form-control"
-                :class="{ 'is-invalid': errors.has('Name') }"
+                :class="{ 'is-invalid': submitted && $v.showModel.sName.$error }"
                 :maxlength="100"
               />
-              <div v-if="errors.has('Name')" class="text-danger">{{ errors.first('Name') }}</div>
+              <div v-if="submitted && !$v.showModel.sName.required" class="text-danger">Show name is required</div>
             </div>
-            <!-- <div class="form-group">
-            <label for="sSVenue" class="font-weight-bold">
-              Venue
-              <span class="required">*</span>
-            </label>
-            <input
-              type="text"
-              placeholder="Venue"
-              v-model="showModel.sVenue"
-              v-validate="'required'"
-              id="sSVenue"
-              name="Venue"
-              class="form-control"
-              :class="{ 'is-invalid': errors.has('Venue') }"
-              :maxlength="100"
-            />
-            <div v-if="errors.has('Venue')" class="text-danger">{{ errors.first('Venue') }}</div>
-            </div>-->
             <div class="form-group">
               <label for="sDescription" class="font-weight-bold">
                 Description
@@ -58,18 +39,17 @@
                 :editor="editor"
                 class="form-control"
                 v-model="showModel.sDescription"
-                v-validate="'required'"
                 rows="5"
                 id="sDescription"
                 name="Description"
-                :class="{ 'is-invalid': errors.has('Description') }"
+                :class="{ 'is-invalid': submitted && $v.showModel.sDescription.$error }"
                 :maxlength="5000"
                 :config="editorConfig"
               ></ckeditor>
               <div
-                v-if="errors.has('Description')"
+                v-if="submitted && !$v.showModel.sDescription.required"
                 class="text-danger"
-              >{{ errors.first('Description') }}</div>
+              >Description is required</div>
             </div>
             <div class="form-group">
               <div for="dDate" class="mb-2 font-weight-bold">
@@ -80,14 +60,13 @@
                 v-model="showModel.dDate"
                 id="dDate"
                 name="Date"
-                v-validate="'required'"
-                :class="{ 'is-invalid': errors.has('Date') }"
+                :class="{ 'is-invalid': submitted && $v.showModel.dDate.$error }"
                 :showIcon="true"
                 :showTime="true"
                 :showSeconds="true"
                 autocomplete="off"
               />
-              <div v-if="errors.has('Date')" class="text-danger">{{ errors.first('Date') }}</div>
+              <div v-if="submitted && !$v.showModel.dDate.required" class="text-danger">Date is required</div>
             </div>
             <div class="form-group">
               <label for="nPrice" class="font-weight-bold">
@@ -97,16 +76,15 @@
               <input
                 type="number"
                 v-model="showModel.nTicketPrice"
-                v-validate="'required'"
                 placeholder="Ticket Price"
                 id="nPrice"
                 name="Price"
                 min="1"
                 class="form-control"
-                :class="{ 'is-invalid': errors.has('Price') }"
+                :class="{ 'is-invalid': submitted && $v.showModel.nTicketPrice.$error }"
                 :maxlength="4"
               />
-              <div v-if="errors.has('Price')" class="text-danger">{{ errors.first('Price') }}</div>
+              <div v-if="submitted && !$v.showModel.nTicketPrice.required" class="text-danger">Price is required</div>
             </div>
             <div class="form-group">
               <div for="sGenreName" class="mb-2 font-weight-bold">
@@ -116,15 +94,14 @@
               <Dropdown
                 v-model="selectedGenre"
                 :options="genres"
-                v-validate="'required'"
                 name="Genre"
                 optionLabel="sGenreName"
                 placeholder="Select a Genre"
                 @change="onChangeGenre"
-                :class="{ 'is-invalid': errors.has('Genre') }"
+                :class="{ 'is-invalid': submitted && $v.selectedGenre.$error }"
                 style="width: 210px !important;"
               />
-              <div v-if="errors.has('Genre')" class="text-danger">{{ errors.first('Genre') }}</div>
+              <div v-if="submitted && !$v.selectedGenre.required" class="text-danger">Genre is required</div>
             </div>
             <div class="form-group">
               <div for="sArtistName" class="mb-2 font-weight-bold">
@@ -134,44 +111,17 @@
               <Dropdown
                 v-model="selectedArtist"
                 :options="artists"
-                v-validate="'required'"
                 name="Artist"
                 optionLabel="sArtistName"
                 placeholder="Select a Artist"
-                :class="{ 'is-invalid': errors.has('Artist') }"
+                :class="{ 'is-invalid': submitted && $v.selectedArtist.$error }"
                 style="width: 210px !important;"
               />
-              <div v-if="errors.has('Artist')" class="text-danger">{{ errors.first('Artist') }}</div>
+              <div v-if="submitted && !$v.selectedArtist.required" class="text-danger">Artist is required</div>
             </div>
-            <!-- <div class="form-group">
-            <label for="dPhoneNo" class="font-weight-bold">
-              Contact Number
-              <span class="required">*</span>
-            </label>
-            <input
-              type="text"
-              v-model="showModel.sPhoneNo"
-              v-validate="{ required: true, regex:/^[0-9]+$/ }"
-              placeholder="Contact Number"
-              id="dPhoneNo"
-              name="ContactNumber"
-              class="form-control"
-              :class="{ 'is-invalid': errors.has('ContactNumber') }"
-              :maxlength="12"
-            />
-            <div
-              v-if="errors.has('ContactNumber')"
-              class="text-danger"
-            >{{ errors.first('ContactNumber') }}</div>
-            </div>-->
             <div class="row">
               <div class="col-6">
-                <button
-                  class="btn btn-primary"
-                  v-on:click="saveShow()"
-                  type="submit"
-                  v-bind:disabled="errors.any()"
-                >Save</button>
+                <button class="btn btn-primary" v-on:click="saveShow()" type="submit">Save</button>
               </div>
             </div>
           </div>
@@ -190,6 +140,7 @@ import {
 } from "../../assets/configuration/config";
 import router from "../../router";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import { required, email, minLength, sameAs } from "vuelidate/lib/validators";
 
 export default {
   name: "ShowCreate",
@@ -228,8 +179,19 @@ export default {
         toolbar: {
           items: ["bold", "italic", "undo", "redo"]
         }
-      }
+      },
+      submitted: false
     };
+  },
+  validations: {
+    showModel: {
+      sName: { required },
+      sDescription: { required },
+      dDate: { required },
+      nTicketPrice: { required }
+    },
+    selectedGenre: { required },
+    selectedArtist: { required }
   },
   methods: {
     getGenre() {
@@ -252,42 +214,44 @@ export default {
       });
     },
     saveShow() {
-      this.$validator.validate().then(valid => {
-        if (valid) {
-          let objRequest = {
-            sName: this.showModel.sName.replace(/\s+/g, " ").trim(),
-            sDescription: this.showModel.sDescription,
-            dDate: this.formatDate(this.showModel.dDate),
-            // sVenue: this.showModel.sVenue.replace(/\s+/g, " ").trim(),
-            nTicketPrice: this.showModel.nTicketPrice,
-            // sPhoneNo: this.showModel.sPhoneNo,
-            nGenreId: this.selectedGenre.nGenreId,
-            nArtistId: this.selectedArtist.nArtistId,
-            start: this.formatDate(this.showModel.dDate),
-            title: this.showModel.sName.replace(/\s+/g, " ").trim()
-          };
+      this.submitted = true;
+      this.$v.$touch();
+      if (this.$v.$invalid) {
+        return;
+      }
 
-          this.showService.saveShow(objRequest).then(response => {
-            if (response.status == 201) {
-              this.$toast.add({
-                severity: "success",
-                summary: "Success Message",
-                detail: CommonMessageConfig.SaveSuccessfully,
-                life: 1500
-              });
-              setTimeout(() => {
-                router.push({ name: "Shows" });
-              }, 1000);
+      let objRequest = {
+        sName: this.showModel.sName.replace(/\s+/g, " ").trim(),
+        sDescription: this.showModel.sDescription,
+        dDate: this.formatDate(this.showModel.dDate),
+        // sVenue: this.showModel.sVenue.replace(/\s+/g, " ").trim(),
+        nTicketPrice: this.showModel.nTicketPrice,
+        // sPhoneNo: this.showModel.sPhoneNo,
+        nGenreId: this.selectedGenre.nGenreId,
+        nArtistId: this.selectedArtist.nArtistId,
+        start: this.formatDate(this.showModel.dDate),
+        title: this.showModel.sName.replace(/\s+/g, " ").trim()
+      };
 
-              // window.location.reload();
-            } else {
-              this.$toast.add({
-                severity: "error",
-                summary: "Error Message",
-                detail: CommonMessageConfig.ErrorMessage,
-                life: 1500
-              });
-            }
+      this.showService.saveShow(objRequest).then(response => {
+        if (response.status == 201) {
+          this.$toast.add({
+            severity: "success",
+            summary: "Success Message",
+            detail: CommonMessageConfig.SaveSuccessfully,
+            life: 1500
+          });
+          setTimeout(() => {
+            router.push({ name: "Shows" });
+          }, 1000);
+
+          // window.location.reload();
+        } else {
+          this.$toast.add({
+            severity: "error",
+            summary: "Error Message",
+            detail: CommonMessageConfig.ErrorMessage,
+            life: 1500
           });
         }
       });

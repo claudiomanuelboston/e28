@@ -4,7 +4,7 @@ export const AuthConfig = Object.freeze({
 });
 
 export const UrlConfig = Object.freeze({
-    baseurl: "http://localhost:3000/"
+    baseurl: "https://us-central1-music-hall-1.cloudfunctions.net/MusicHall/api/"
     // baseurl: "https://my-json-server.typicode.com/claudiomanuelboston/e28/"
 });
 

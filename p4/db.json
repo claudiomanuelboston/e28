@@ -109,39 +109,6 @@
       "start": "2019-01-11T22:25:00+05:30",
       "title": "Guru Guru",
       "id": 10
-    },
-    {
-      "sName": "Test Show",
-      "sDescription": "<p>Test show description.</p>",
-      "dDate": "2019-12-10T16:29:22-05:00",
-      "nTicketPrice": "10.8",
-      "nGenreId": 1,
-      "nArtistId": 5,
-      "start": "2019-12-10T16:29:22-05:00",
-      "title": "Test Show",
-      "id": 11
-    },
-    {
-      "sName": "Test Show",
-      "sDescription": "<p>Test show description.</p>",
-      "dDate": "2019-12-11T13:39:42-05:00",
-      "nTicketPrice": "10.8",
-      "nGenreId": 1,
-      "nArtistId": 5,
-      "start": "2019-12-11T13:39:42-05:00",
-      "title": "Test Show",
-      "id": 12
-    },
-    {
-      "sName": "Test Show",
-      "sDescription": "<p>Test show description.</p>",
-      "dDate": "2019-12-14T15:59:00-05:00",
-      "nTicketPrice": "10.8",
-      "nGenreId": 1,
-      "nArtistId": 5,
-      "start": "2019-12-14T15:59:00-05:00",
-      "title": "Test Show",
-      "id": 13
     }
   ],
   "genre": [
