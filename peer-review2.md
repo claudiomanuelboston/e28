@@ -16,12 +16,12 @@
 - The code is very straightforward
 
 ### Are there aspects of the code that you feel were not self-evident and would benefit from comments?
-- I am not sure the reason of having
+- I am not sure the reason of having 'My Recipes' menu entry if it was never used
 - Liked the facts that images were of the same size and the contents were well written
 
 
 ### Are there any parts of the code that you found interesting or taught you something new?
-- In the code the following entry was never used : <router-link exact :to='{name: "myStuff"}'>My Stuff</router-link>&nbsp;|&nbsp;
+- The following router-link was never used : "myStuff"}'>My Stuff<
 
 ### Are there any best practices discussed in course material that you feel were not addressed in the code?
 - NO 
