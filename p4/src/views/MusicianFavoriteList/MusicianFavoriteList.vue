@@ -198,22 +198,23 @@ export default {
       }
     },
     getGenre() {
-      this.showService.getGenre().then(response => {
-        this.genre = response.data;
+      // this.showService.getGenre().then(response => {
+        let response = this.showService.getGenre();
+        this.genre = response;
         if (this.genre != undefined && this.genre.length > 0) {
           this.getFavoriteShows();
           this.tempShows = this.shows;
         }
-      });
+      // });
     },
     getArtist() {
-      this.showService.getArtist().then(response => {
-        this.artists = response.data;
+      // this.showService.getArtist().then(response => {
+        this.artists = this.showService.getArtist();
         if (this.artists != undefined && this.artists.length > 0) {
           this.getFavoriteShows();
           this.tempShows = this.shows;
         }
-      });
+      // });
     },
 
     getFavoriteShows() {

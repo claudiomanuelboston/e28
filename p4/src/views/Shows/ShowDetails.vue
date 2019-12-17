@@ -146,11 +146,13 @@ export default {
       postDetailsById: null,
       showService: null,
       artistDetails: null,
-      postDetails: null,
-      id: 0,
+      postDetails: [],
+      id: "0",
       isLoading: false,
       fullPage: true,
-      isFavorite: false
+      isFavorite: false,
+      totalRecords: 0,
+      selectedIndex: 0
     };
   },
   created() {
@@ -174,21 +176,28 @@ export default {
   methods: {
     getArtistById(Id) {
       let _this = this;
-      this.showService.getArtistById(Id).then(response => {
-        _this.artistDetails = response.data[0];
-      });
+      _this.artistDetails = this.showService.getArtistById(Id)[0];
     },
     getPosts() {
       let _this = this;
-      this.showService.getPosts().then(response => {
-        _this.postDetails = response.data;
+      _this.showService.getPosts().then(response => {
+        response.map((doc, index) => {
+          if (doc.data().id) {
+            _this.postDetails.push(doc.data());
+          }
+        });
+        _this.totalRecords = _this.postDetails.length;
+        let currentPost = _this.postDetailsById;
+        _this.selectedIndex = _this.postDetails.findIndex(
+          x => x.id == currentPost.id
+        );
       });
     },
     getPostById() {
       let _this = this;
       this.isLoading = true;
       this.showService.getPostById(_this.id).then(response => {
-        _this.postDetailsById = response.data[0];
+        _this.postDetailsById = response;
         if (_this.postDetailsById) {
           _this.postDetailsById.dDate = this.formatDate(
             _this.postDetailsById.dDate
@@ -202,35 +211,38 @@ export default {
 
     getFirstPost() {
       let _this = this;
-      _this.id = Number(_this.postDetails[0].id);
+      _this.selectedIndex = 0;
+      _this.id = _this.postDetails[0].id;
       this.getPostById();
     },
     getLastPost() {
       let _this = this;
-      _this.id = Number(_this.postDetails[_this.postDetails.length - 1].id);
+      _this.selectedIndex = _this.postDetails.length - 1;
+      _this.id = _this.postDetails[_this.postDetails.length - 1].id;
       this.getPostById();
     },
     getPreviousPost() {
+      --this.selectedIndex;
       let _this = this;
-      if (_this.postDetails[0].id < Number(_this.id)) {
-        _this.id = Number(_this.id) - 1;
-        this.getPostById();
+
+      if (this.selectedIndex > 0) {
+        _this.id = _this.postDetails[this.selectedIndex].id;
       } else {
-        _this.id = Number(_this.postDetails[_this.postDetails.length - 1].id);
-        this.getPostById();
+        this.selectedIndex = this.totalRecords - 1;
+        _this.id = _this.postDetails[this.selectedIndex].id;
       }
+      this.getPostById();
     },
     getNextPost() {
       let _this = this;
-      if (
-        _this.postDetails[_this.postDetails.length - 1].id > Number(_this.id)
-      ) {
-        _this.id = Number(_this.id) + 1;
-        this.getPostById();
+      ++_this.selectedIndex;
+      if (_this.selectedIndex <= this.totalRecords - 1) {
+        _this.id = _this.postDetails[this.selectedIndex].id;
       } else {
-        _this.id = Number(_this.postDetails[0].id);
-        this.getPostById();
+        _this.selectedIndex = 0;
+        _this.id = _this.postDetails[this.selectedIndex].id;
       }
+      _this.getPostById();
     },
     addtoFavorite() {
       let favoriteList = JSON.parse(localStorage.getItem("favoriteList"));

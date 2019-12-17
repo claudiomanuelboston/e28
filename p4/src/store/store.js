@@ -96,10 +96,10 @@ export const store = new Vuex.Store({
     },
     actions: {
         GET_FAQS(context, payload) {
-            return _ShowService.getFaqs().then(response => {
-                context.commit('SET_FAQS', response.data);
+            // return _ShowService.getFaqs().then(response => {
+                context.commit('SET_FAQS', _ShowService.getFaqs());
                 return this.state.faqs;
-            })
+            // })
         }
     }
 })

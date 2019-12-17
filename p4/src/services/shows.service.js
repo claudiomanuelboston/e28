@@ -1,57 +1,57 @@
-import { UrlConfig } from '../../src/assets/configuration/config'
+import { UrlConfig } from '../../src/assets/configuration/config';
+import db from '../../db.json';
+import { get, save, getById } from '../firebase-module'
 
 let baseurl = UrlConfig.baseurl;
 export default class ShowService {
 
-    getPosts() {
-        return axios.get(baseurl + "post");
-    }
-
     getGenre() {
-        return axios.get(baseurl + "genre");
-    }
-
-    getPostByGenre(Id) {
-        if (Id == 0) {
-            return axios.get(baseurl + "post");
-        } else {
-            return axios.get(baseurl + "post?nGenreId=" + Id);
-        }
-    }
-
-    getPostById(Id) {
-        return axios.get(baseurl + "post?id=" + Id);
-
-    }
-    getArtistById(Id) {
-        return axios.get(baseurl + "artist?nArtistId=" + Id);
-    }
-
-    getArtistByGenre(Id) {
-        return axios.get(baseurl + "artist?nGenreId=" + Id);
-    }
-
-    saveShow(objRequest) {
-        return axios.post(baseurl + "post", objRequest);
+        return db.genre;
     }
 
     getFaqs() {
-        return axios.get(baseurl + "faq");
+        return db.faq;
     }
 
     getArtist() {
-        return axios.get(baseurl + "artist");
+        return db.artist;
     }
 
-    saveSubscription(objRequest) {
-        return axios.post(baseurl + "subscription", objRequest);
+    getArtistById(Id) {
+        return db.artist.filter(art => art.nArtistId == Id);
+    }
+
+    getArtistByGenre(Id) {
+        return db.artist.filter(art => art.nGenreId == Id);
     }
 
     getInterviewsData() {
-        return axios.get(baseurl + "interview");
+        return db.interview;
     }
-    
-    getProducts(){
-        return axios.get(baseurl + "product")
+
+    getProducts() {
+        return db.product;
+    }
+
+    //Dynamic data
+    saveSubscription(objRequest) {
+        return save("subscription", objRequest).then(response => {
+            return response
+        });
+    }
+
+    saveShow(objRequest) {
+        return save("post", objRequest).then(response => {
+            return response
+        });
+    }
+    getPosts() {
+        return get('post').then(response => {
+            return response.docs;
+        });
+    }
+
+    getPostById(Id) {
+        return getById('post', Id);
     }
 }

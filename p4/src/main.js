@@ -24,6 +24,8 @@ import Column from 'primevue/column';
 import InputText from 'primevue/inputtext';
 import Toast from 'primevue/toast';
 import ToastService from 'primevue/toastservice';
+import { initApp } from './firebase-module';
+import UUID from 'vue-uuid'
 
 Vue.component('FullCalendar', FullCalendar);
 Vue.component('Calendar', Calendar);
@@ -35,13 +37,16 @@ Vue.component('Column', Column);
 Vue.component('InputText', InputText);
 Vue.component('Toast', Toast);
 
-
 Vue.use(BootstrapVue)
 Vue.use(ToastService);
 Vue.use(CKEditor);
 Vue.use(Router);
 Vue.use(Vuex);
 Vue.use(Vuelidate);
+Vue.use(UUID);
+
+initApp();
+
 localStorage.setItem("favoriteList", null);
 /* eslint-disable no-new */
 new Vue({

@@ -28,7 +28,10 @@
                 :class="{ 'is-invalid': submitted && $v.showModel.sName.$error }"
                 :maxlength="100"
               />
-              <div v-if="submitted && !$v.showModel.sName.required" class="text-danger">Show name is required</div>
+              <div
+                v-if="submitted && !$v.showModel.sName.required"
+                class="text-danger"
+              >Show name is required</div>
             </div>
             <div class="form-group">
               <label for="sDescription" class="font-weight-bold">
@@ -66,7 +69,10 @@
                 :showSeconds="true"
                 autocomplete="off"
               />
-              <div v-if="submitted && !$v.showModel.dDate.required" class="text-danger">Date is required</div>
+              <div
+                v-if="submitted && !$v.showModel.dDate.required"
+                class="text-danger"
+              >Date is required</div>
             </div>
             <div class="form-group">
               <label for="nPrice" class="font-weight-bold">
@@ -84,7 +90,10 @@
                 :class="{ 'is-invalid': submitted && $v.showModel.nTicketPrice.$error }"
                 :maxlength="4"
               />
-              <div v-if="submitted && !$v.showModel.nTicketPrice.required" class="text-danger">Price is required</div>
+              <div
+                v-if="submitted && !$v.showModel.nTicketPrice.required"
+                class="text-danger"
+              >Price is required</div>
             </div>
             <div class="form-group">
               <div for="sGenreName" class="mb-2 font-weight-bold">
@@ -101,7 +110,10 @@
                 :class="{ 'is-invalid': submitted && $v.selectedGenre.$error }"
                 style="width: 210px !important;"
               />
-              <div v-if="submitted && !$v.selectedGenre.required" class="text-danger">Genre is required</div>
+              <div
+                v-if="submitted && !$v.selectedGenre.required"
+                class="text-danger"
+              >Genre is required</div>
             </div>
             <div class="form-group">
               <div for="sArtistName" class="mb-2 font-weight-bold">
@@ -117,7 +129,10 @@
                 :class="{ 'is-invalid': submitted && $v.selectedArtist.$error }"
                 style="width: 210px !important;"
               />
-              <div v-if="submitted && !$v.selectedArtist.required" class="text-danger">Artist is required</div>
+              <div
+                v-if="submitted && !$v.selectedArtist.required"
+                class="text-danger"
+              >Artist is required</div>
             </div>
             <div class="row">
               <div class="col-6">
@@ -195,9 +210,12 @@ export default {
   },
   methods: {
     getGenre() {
-      this.showService.getGenre().then(response => {
-        this.genres = this.alphaSortByKey(response.data, "nGenreId");
-      });
+      // this.showService.getGenre().then(response => {
+      this.genres = this.alphaSortByKey(
+        this.showService.getGenre(),
+        "nGenreId"
+      );
+      // });
     },
     alphaSortByKey: function(arr, key) {
       arr.sort(function(a, b) {
@@ -209,9 +227,12 @@ export default {
     },
     onChangeGenre() {
       let genreId = this.selectedGenre.nGenreId;
-      this.showService.getArtistByGenre(genreId).then(response => {
-        this.artists = this.alphaSortByKey(response.data, "nArtistId");
-      });
+      // this.showService.getArtistByGenre(genreId).then(response => {
+      this.artists = this.alphaSortByKey(
+        this.showService.getArtistByGenre(genreId),
+        "nArtistId"
+      );
+      // });
     },
     saveShow() {
       this.submitted = true;
@@ -234,7 +255,7 @@ export default {
       };
 
       this.showService.saveShow(objRequest).then(response => {
-        if (response.status == 201) {
+        if (response) {
           this.$toast.add({
             severity: "success",
             summary: "Success Message",

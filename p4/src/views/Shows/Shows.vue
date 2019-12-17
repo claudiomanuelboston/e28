@@ -47,7 +47,8 @@ export default {
       },
 
       editable: false,
-      posts: null,
+      posts: [],
+      allPosts: [],
       genre: [],
       selectedGenre: {
         nGenreId: 0,
@@ -69,26 +70,32 @@ export default {
       let _this = this;
       this.getGenre();
       this.showService.getPosts().then(response => {
-        this.posts = response.data;
+        response.map((doc, index) => {
+          if (doc.data().id) {
+            this.posts.push(doc.data());
+            this.allPosts.push(doc.data());
+          }
+        });
       });
     }
   },
   methods: {
     getGenre() {
-      this.showService.getGenre().then(response => {
-        response.data.push({
-          nGenreId: 0,
-          sGenreName: "All"
-        });
-        this.genre = this.alphaSortByKey(response.data, "nGenreId");
+      let response = JSON.parse(JSON.stringify(this.showService.getGenre()));
+      response.push({
+        nGenreId: 0,
+        sGenreName: "All"
       });
+      this.genre = this.alphaSortByKey(response, "nGenreId");
     },
     getPostByGenre() {
-      this.showService
-        .getPostByGenre(this.selectedGenre.nGenreId)
-        .then(response => {
-          this.posts = response.data;
-        });
+      if (this.selectedGenre.nGenreId == 0) {
+        this.posts = this.allPosts;
+      } else {
+        this.posts = this.allPosts.filter(
+          post => post.nGenreId == this.selectedGenre.nGenreId
+        );
+      }
     },
     alphaSortByKey: function(arr, key) {
       arr.sort(function(a, b) {

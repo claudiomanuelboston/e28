@@ -71,15 +71,7 @@ export default {
   },
   methods: {
     getInterviews() {
-      this.isLoading = true;
-      this.showService
-        .getInterviewsData()
-        .then(response => {
-          this.interviewsList = response.data;
-        })
-        .finally(() => {
-          this.isLoading = false;
-        });
+      this.interviewsList = this.showService.getInterviewsData();
     }
   }
 };

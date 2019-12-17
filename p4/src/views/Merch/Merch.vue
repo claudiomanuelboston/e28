@@ -60,15 +60,7 @@ export default {
   },
   methods: {
     getProducts() {
-      this.isLoading = true;
-      this.showService
-        .getProducts()
-        .then(response => {
-          this.products = response.data;
-        })
-        .finally(() => {
-          this.isLoading = false;
-        });
+      this.products = this.showService.getProducts();
     }
   }
 };

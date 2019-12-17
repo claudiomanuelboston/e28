@@ -29,8 +29,18 @@
               <i class="fa fa-bars" aria-hidden="true"></i>
             </i>&nbsp;FAVOURITES&nbsp;
           </b-nav-item>
-          <b-nav-item v-if="!IsLogin" href="/#/login" v-on:click="logout" id="logout">&nbsp;&nbsp;LOGOUT</b-nav-item>
-          <b-nav-item v-if="IsLogin" href="/#/login" v-on:click="logout" id="login">&nbsp;&nbsp;LOGIN</b-nav-item>
+          <b-nav-item
+            v-if="!IsLogin"
+            href="/#/login"
+            v-on:click="logout"
+            id="logout"
+          >&nbsp;&nbsp;LOGOUT</b-nav-item>
+          <b-nav-item
+            v-if="IsLogin"
+            href="/#/login"
+            v-on:click="logout"
+            id="login"
+          >&nbsp;&nbsp;LOGIN</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -77,6 +87,7 @@ import {
   CommonMessageConfig
 } from "../assets/configuration/config";
 import ShowService from "../services/shows.service";
+import { required, email, minLength, sameAs } from "vuelidate/lib/validators";
 
 export default {
   name: "DefaultContainer",
@@ -90,8 +101,14 @@ export default {
         sEmail: undefined
       },
       showService: null,
-      sMessage: undefined
+      sMessage: undefined,
+      submitted: false
     };
+  },
+  validations: {
+    subscriptionModel: {
+      sEmail: { required, email }
+    }
   },
   created() {
     this.showService = new ShowService();
@@ -123,38 +140,32 @@ export default {
       localStorage.setItem("Password", "");
       this.IsLogin = true;
       localStorage.setItem("favoriteList", null);
-     this.$store.commit('clearCart');
+      this.$store.commit("clearCart");
     },
     saveSubscription(event) {
-      this.$validator.validate().then(valid => {
-        if (valid) {
-          this.showService
-            .saveSubscription(this.subscriptionModel)
-            .then(response => {
-              if (response.status == 201) {
-                event.target.reset();
-                // this.$toast.add({
-                //   severity: "success",
-                //   summary: "Success Message",
-                //   detail: CommonMessageConfig.SubscribeSuccessfully,
-                //   life: 2000
-                // });
-                this.sMessage = CommonMessageConfig.SubscribeSuccessfully;
-                this.subscriptionModel.sEmail = undefined;
-                setTimeout(() => {
-                  this.sMessage = "";
-                }, 2000);
-              } else {
-                // this.$toast.add({
-                //   severity: "error",
-                //   summary: "Error Message",
-                //   detail: CommonMessageConfig.ErrorMessage,
-                //   life: 1500
-                // });
-              }
-            });
-        }
-      });
+      this.submitted = true;
+      this.$v.$touch();
+      if (this.$v.$invalid) {
+        return;
+      }
+      this.showService
+        .saveSubscription(this.subscriptionModel)
+        .then(response => {
+          if (response) {
+            event.target.reset();
+            // this.$toast.add({
+            //   severity: "success",
+            //   summary: "Success Message",
+            //   detail: CommonMessageConfig.SubscribeSuccessfully,
+            //   life: 2000
+            // });
+            this.sMessage = CommonMessageConfig.SubscribeSuccessfully;
+            this.subscriptionModel.sEmail = undefined;
+            setTimeout(() => {
+              this.sMessage = "";
+            }, 2000);
+          }
+        });
     }
   }
 };
