@@ -12,8 +12,7 @@
 ## Notes for instructor
 * In order to run the application execute the following commands
 
-* npm install
-* npm start
+* npm install and npm start
 
 ## Within netlify, I am using
 
@@ -47,5 +46,5 @@ npm run serve
 * 3.7) Interview
 * 3.6) Logout page
 
-* Having the ability to Adding shows to the cart / removing shows to the cart
+* Having the ability to Adding shows to the cart / removing shows to the cart and calculating the price accordingly
 * Having the ability to create favorites		  
