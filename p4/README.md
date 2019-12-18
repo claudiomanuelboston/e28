@@ -29,15 +29,15 @@ npm run serve
 
 ## Functionality of the Application
 
-* 1) User has the ability to login and logout 
+* User has the ability to login and logout 
 
 Created and id /pasword to login in the application
 Email: admin@admin.com
 Password: abcd@1234
 
-* 2) I loaded predefined data where each musician folder contains	Pictures (4), Videos (playable), Biography
+* I loaded predefined data where each musician folder contains	Pictures (4), Videos (playable), Biography
 	
-* 3) Pages 
+* Pages 
 
 * 3.1) Music Hall (ficticious Music Hall) and Home (ficticious Music Hall)
 * 3.2) Create/ Post a Show (Having six fields) that are mandatory ( Show name, Description, Show Date, Ticket price, Genre and Artist.
