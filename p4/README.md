@@ -23,6 +23,7 @@
 
 npm run serve
 * npm test
+
 I created 3 test cases 
   Login
     √ check email, password are required fields with invalid data (12ms)
@@ -31,6 +32,7 @@ I created 3 test cases
 
 
 * npm run test:e2e
+
 I created 10 cases
  Music Hall
  √ Test - First page URL without Login
