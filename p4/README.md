@@ -26,25 +26,27 @@ npm run serve
 
   I created 3 test cases 
   Login
-    √ check email, password are required fields with invalid data (12ms)
-    √ check valid email address with invalid email (3ms)
-    √ check password is required with invalid password (2ms)	
+
+  √ check email, password are required fields with invalid data (12ms)
+  √ check valid email address with invalid email (3ms)
+  √ check password is required with invalid password (2ms)	
 
 
 * npm run test:e2e
 
- I created 10 cases
- Music Hall
- √ Test - First page URL without Login
- √ Test - Login page Authorization
- √ Test - Home page
- √ Test - FAQ Page
- √ Test - FoodMenu Page
- √ Test - Merch Page
- √ Test - Interview Page
- √ Test - Create Show, View show , Buy ticket & Cart Page
- √ Test - Favorite List
- √ Test - Logout
+  I created 10 cases
+  Music Hall
+
+  √ Test - First page URL without Login
+  √ Test - Login page Authorization
+  √ Test - Home page
+  √ Test - FAQ Page
+  √ Test - FoodMenu Page
+  √ Test - Merch Page
+  √ Test - Interview Page
+  √ Test - Create Show, View show , Buy ticket & Cart Page
+  √ Test - Favorite List
+  √ Test - Logout
 
 
 ## Functionality of the Application
