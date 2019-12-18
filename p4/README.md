@@ -29,12 +29,7 @@ npm run serve
 
 ## Functionality of the Application
 
-* User has the ability to login and logout 
-
-Created and id /pasword to login in the application
-Email: admin@admin.com
-Password: abcd@1234
-
+* User has the ability to login and logout. Created and id /pasword to login in the application: Email: admin@admin.com and Password: abcd@1234
 * I loaded predefined data where each musician folder contains	Pictures (4), Videos (playable), Biography
 	
 * Pages 
