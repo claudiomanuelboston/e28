@@ -22,7 +22,7 @@
 ## To run test cases and e2e, use the following command
 
 npm run serve
-* npm test.
+* npm test
 * I created 3 test cases 
   Login
     √ check email, password are required fields with invalid data (12ms)
@@ -50,7 +50,7 @@ npm run serve
 * User has the ability to login and logout. Created and id /pasword to login in the application: Email: admin@admin.com and Password: abcd@1234
 * I loaded predefined data where each musician folder contains	Pictures (4), Videos (playable), Biography
 	
-* Pages 
+Pages 
 
 * 3.1) Music Hall (ficticious Music Hall) and Home (ficticious Music Hall)
 * 3.2) Create/ Post a Show (Having six fields) that are mandatory ( Show name, Description, Show Date, Ticket price, Genre and Artist.
